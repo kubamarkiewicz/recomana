@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0">
+
+    <title>Cartellera - Recomana.cat</title>
+    <meta name="description" content="">
+
+    <!-- Le styles -->
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/node_modules/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/et-recomanem.css" rel="stylesheet">
+    <link href="css/cartellera.css" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+	<header>
+		
+		<div class="container">
+
+			<a href="index.html" class="logo" title="recomana"></a>
+			
+			<nav class="sub-menu">
+				<ul>
+					<li><a href="#">QUÈ ÉS?</a></li>
+					<li><a href="#">Contacte</a></li>
+					<li class="social-icon fb"><a href="#" target="_blank">facebook</a></li>
+					<li class="social-icon twitter"><a href="#" target="_blank">twitter</a></li>
+				</ul>
+			</nav>
+
+			<form class="search form-inline">
+				<input type="text" class="form-control" placeholder="Cercar obra, teatre, critic, recomanacció, #novaveu...">
+				<button type="submit" class="btn btn-primary">Cercar</button>
+			</form>
+			
+			<div class="banner">
+				<a href="#">
+					<img src="images/placeholder/banner-header.jpg" alt="">
+				</a>
+			</div>
+			           
+			<div class="burger">
+                <div class="slice"></div>
+                <div class="slice"></div>
+                <div class="slice"></div>
+            </div>
+
+			<nav class="main-menu">
+				<ul>
+					<li><a href="index.html" data-megamenu="portada">Portada</a></li>
+					<li><a href="et-recomanem.html">Et recomanem</a></li>
+					<li class="current-menu-item"><a href="cartellera.html" data-megamenu="cartellera">Cartellera</a></li>
+					<li><a href="qui-som.html">Qui som</a></li>
+					<li><a href="festivals.html">FESTIVALS</a></li>
+					<li><a href="et-proposem.html">et proposem</a></li>
+					<li><a href="novaveu.html">#NOVAVEU</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</header>
+
+
+	<main>
+
+		<section id="cartellera">
+		
+			<div class="container">
+				
+				<h1 class="display-1">Cartellera d’avui a Banyoles</h1>
+
+				<div class="recomana-listing row">
+
+					<aside class="col-md-3">
+
+						<h6 class="box-title">Filtres</h6>
+
+
+						<div class="collapse-control" data-toggle="collapse" data-target="#filter-date">Data - 30 agosto de 2018</div>
+
+						<div id="filter-date" class="collapse show">
+							
+							<div id="datepicker"></div>
+
+						</div>
+	
+						<br>
+
+
+
+						<div class="collapse-control" data-toggle="collapse" data-target="#filter-poblacions">Poblacions</div>
+
+						<div id="filter-poblacions" class="collapse filter-list show">
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-poblacion-1" checked="checked">
+  								<label class="custom-control-label" for="input-poblacion-1">Banyoles</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-poblacion-2">
+  								<label class="custom-control-label" for="input-poblacion-2">Barcelona</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-poblacion-3">
+  								<label class="custom-control-label" for="input-poblacion-3">Barcelona</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-poblacion-4">
+  								<label class="custom-control-label" for="input-poblacion-4">Barcelona</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-poblacion-5">
+  								<label class="custom-control-label" for="input-poblacion-5">Barcelona</label>
+							</div>
+
+						</div>
+
+						<br>
+
+
+
+						<div class="collapse-control" data-toggle="collapse" data-target="#filter-disciplines">Quines disciplines vols?</div>
+
+						<div id="filter-disciplines" class="collapse filter-list show">
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-1" checked="checked">
+  								<label class="custom-control-label" for="input-discipline-1">Teatre</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-2">
+  								<label class="custom-control-label" for="input-discipline-2">Circ</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-3" checked="checked">
+  								<label class="custom-control-label" for="input-discipline-3">Dansa</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-4">
+  								<label class="custom-control-label" for="input-discipline-4">Familiar</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-5">
+  								<label class="custom-control-label" for="input-discipline-5">Musical</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-6">
+  								<label class="custom-control-label" for="input-discipline-6">Nous formats</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-7">
+  								<label class="custom-control-label" for="input-discipline-7">Òpera</label>
+							</div>
+
+						</div>
+
+						<br>
+
+
+						<div class="banner">
+							<a href="#"><img src="images/placeholder/banner-aside.jpg" alt=""></a>
+						</div>
+
+						<br>
+
+						<div class="banner">
+							<a href="#"><img src="images/placeholder/banner-aside-2.jpg" alt=""></a>
+						</div>
+
+					</aside>
+
+
+					<main class="col-md-9">
+
+						<div class="filters-top">
+							Ordenar per: 
+							<form class="form-inline">
+								<div class="custom-control custom-radio">
+									<input type="radio" id="sortBy1" name="sortBy" class="custom-control-input" checked="checked">
+									<label class="custom-control-label" for="sortBy1">Hora d’inici</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="sortBy2" name="sortBy" class="custom-control-input">
+									<label class="custom-control-label" for="sortBy2">Nota crítics</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="sortBy3" name="sortBy" class="custom-control-input">
+									<label class="custom-control-label" for="sortBy3">Edat recomanada</label>
+								</div>
+								<div class="custom-control custom-radio">
+									<input type="radio" id="sortBy4" name="sortBy" class="custom-control-input">
+									<label class="custom-control-label" for="sortBy4">Alfabètic</label>
+								</div>
+							</form>
+						</div><!--  /.filters-top  -->
+
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article-1.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-1"></span>
+									<span class="category-color bg-color-category-14"></span>
+									<span class="category-color bg-color-category-13"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<p>
+										SAT! Teatre de Barcelona a les 12:00 hores. <br>Barcelona.
+									</p>
+									<h4><a href="#">Per un instant</a></h4>
+
+									<div class="row">
+										<div class="col-md-6 mt-auto">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-md-6 text-right">
+											<div class="critics-icons">
+												<a href="#" class="more-critics">+</a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-nowrap">
+												<span class="text-muted">Públic (16)</span>
+												<span class="number-box">7,9</span>
+											</span>
+											<span class="text-nowrap">
+												&nbsp;&nbsp;
+												<span class="text-muted">Crítics (3)</span>
+												<span class="number-box">8,8</span>
+											</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article-1.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-1"></span>
+									<span class="category-color bg-color-category-14"></span>
+									<span class="category-color bg-color-category-13"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<p>
+										SAT! Teatre de Barcelona a les 12:00 hores. <br>Barcelona.
+									</p>
+									<h4><a href="#">Per un instant</a></h4>
+
+									<div class="row">
+										<div class="col-md-6 mt-auto">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-md-6 text-right">
+											<div class="critics-icons">
+												<a href="#" class="more-critics">+</a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-nowrap">
+												<span class="text-muted">Públic (16)</span>
+												<span class="number-box">7,9</span>
+											</span>
+											<span class="text-nowrap">
+												&nbsp;&nbsp;
+												<span class="text-muted">Crítics (3)</span>
+												<span class="number-box">8,8</span>
+											</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article-1.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-1"></span>
+									<span class="category-color bg-color-category-14"></span>
+									<span class="category-color bg-color-category-13"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<p>
+										SAT! Teatre de Barcelona a les 12:00 hores. <br>Barcelona.
+									</p>
+									<h4><a href="#">Per un instant</a></h4>
+
+									<div class="row">
+										<div class="col-md-6 mt-auto">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-md-6 text-right">
+											<div class="critics-icons">
+												<a href="#" class="more-critics">+</a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-nowrap">
+												<span class="text-muted">Públic (16)</span>
+												<span class="number-box">7,9</span>
+											</span>
+											<span class="text-nowrap">
+												&nbsp;&nbsp;
+												<span class="text-muted">Crítics (3)</span>
+												<span class="number-box">8,8</span>
+											</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article-1.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-1"></span>
+									<span class="category-color bg-color-category-14"></span>
+									<span class="category-color bg-color-category-13"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<p>
+										SAT! Teatre de Barcelona a les 12:00 hores. <br>Barcelona.
+									</p>
+									<h4><a href="#">Per un instant</a></h4>
+
+									<div class="row">
+										<div class="col-md-6 mt-auto">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-md-6 text-right">
+											<div class="critics-icons">
+												<a href="#" class="more-critics">+</a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-nowrap">
+												<span class="text-muted">Públic (16)</span>
+												<span class="number-box">7,9</span>
+											</span>
+											<span class="text-nowrap">
+												&nbsp;&nbsp;
+												<span class="text-muted">Crítics (3)</span>
+												<span class="number-box">8,8</span>
+											</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article-1.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-1"></span>
+									<span class="category-color bg-color-category-14"></span>
+									<span class="category-color bg-color-category-13"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<p>
+										SAT! Teatre de Barcelona a les 12:00 hores. <br>Barcelona.
+									</p>
+									<h4><a href="#">Per un instant</a></h4>
+
+									<div class="row">
+										<div class="col-md-6 mt-auto">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-md-6 text-right">
+											<div class="critics-icons">
+												<a href="#" class="more-critics">+</a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-nowrap">
+												<span class="text-muted">Públic (16)</span>
+												<span class="number-box">7,9</span>
+											</span>
+											<span class="text-nowrap">
+												&nbsp;&nbsp;
+												<span class="text-muted">Crítics (3)</span>
+												<span class="number-box">8,8</span>
+											</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+
+
+					</main>
+
+				</div><!--  /.recomana-listing -->
+
+			</div><!--  /.container -->
+
+		</section>
+
+	</main>
+
+
+	<footer>
+		<div class="container">
+			<div class="banner">
+				<a href="#"><img src="images/placeholder/banner-footer.jpg" alt=""></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">PORTADA</a></li>
+					<li><a href="#">QUÈ ÉS?</a></li>
+					<li><a href="#">CONTACTE</a></li>
+					<li><a href="#">AVÍ­S LEGAL</a></li>
+				</ul>
+			</nav>
+			<div class="copy">© 2012-2018 recomana.cat</div>
+		</div>
+	</footer>
+
+	<!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/node_modules/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="js/node_modules/jquery-ui-1.12.1.custom/i18n/datepicker-ca.js"></script>
+	<script src="js/custom.js"></script>
+							
+	<script>
+		// scripts for cartellera page
+
+		$(function() {
+
+			$.datepicker.setDefaults($.datepicker.regional["ca"]);
+			$("#datepicker").datepicker({
+				inline: true,
+				defaultDate: "2018-08-30", // set selected date
+				dateFormat: "yy-mm-dd", 
+		        onSelect: function () {
+		            var selectedDate = $.datepicker.formatDate("yy-mm-dd", $(this).datepicker('getDate'));
+		        	alert(selectedDate);
+		        }
+			});
+
+		});
+	</script>
+
+</body>
+</html>

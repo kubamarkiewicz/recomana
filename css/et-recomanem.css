@@ -1,0 +1,19 @@
+section#et-recomanem .recomana-listing aside .collapse-control {
+	font-weight: bold;
+	font-size: 16px;
+} 
+
+
+#filter-categories a {
+	color: #231F20;
+}
+#filter-categories a.selected {
+	font-weight: bold;
+}
+#filter-categories a .category-color {
+	font-size: 12px;
+	margin-right: 2px;
+}
+
+
+

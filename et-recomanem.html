@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0">
+
+    <title>Et recomanem - Recomana.cat</title>
+    <meta name="description" content="">
+
+    <!-- Le styles -->
+    <link href="js/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/node_modules/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/et-recomanem.css" rel="stylesheet">
+    <link href="css/cartellera.css" rel="stylesheet">
+
+	<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+	<header>
+		
+		<div class="container">
+
+			<a href="index.html" class="logo" title="recomana"></a>
+			
+			<nav class="sub-menu">
+				<ul>
+					<li><a href="#">QUÈ ÉS?</a></li>
+					<li><a href="#">Contacte</a></li>
+					<li class="social-icon fb"><a href="#" target="_blank">facebook</a></li>
+					<li class="social-icon twitter"><a href="#" target="_blank">twitter</a></li>
+				</ul>
+			</nav>
+
+			<form class="search form-inline">
+				<input type="text" class="form-control" placeholder="Cercar obra, teatre, critic, recomanacció, #novaveu...">
+				<button type="submit" class="btn btn-primary">Cercar</button>
+			</form>
+			
+			<div class="banner">
+				<a href="#">
+					<img src="images/placeholder/banner-header.jpg" alt="">
+				</a>
+			</div>
+			           
+			<div class="burger">
+                <div class="slice"></div>
+                <div class="slice"></div>
+                <div class="slice"></div>
+            </div>
+
+			<nav class="main-menu">
+				<ul>
+					<li><a href="index.html" data-megamenu="portada">Portada</a></li>
+					<li class="current-menu-item"><a href="et-recomanem.html">Et recomanem</a></li>
+					<li><a href="cartellera.html" data-megamenu="cartellera">Cartellera</a></li>
+					<li><a href="qui-som.html">Qui som</a></li>
+					<li><a href="festivals.html">FESTIVALS</a></li>
+					<li><a href="et-proposem.html">et proposem</a></li>
+					<li><a href="novaveu.html">#NOVAVEU</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</header>
+
+
+	<main>
+
+		<section id="et-recomanem">
+		
+			<div class="container">
+				
+				<h1 class="display-1">ET RECOMANEM. <small>els més bens valorarats per tothom</small></h1>
+
+				<div class="recomana-listing row">
+
+					<aside class="col-md-3">
+
+						<h6 class="box-title">Filtres</h6>
+
+
+						<div class="collapse-control" data-toggle="collapse" data-target="#filter-categories">Què et bé de gust?</div>
+
+						<div id="filter-categories" class="collapse filter-list show">
+							<a href="javascript:" class="selected"><span class="category-color bg-color-category-1"></span> Actualitat</a>
+							<a href="javascript:"><span class="category-color bg-color-category-2"></span> Actualitat</a>
+							<a href="javascript:"><span class="category-color bg-color-category-3"></span> Actualitat</a>
+							<a href="javascript:"><span class="category-color bg-color-category-4"></span> Actualitat</a>
+							<a href="javascript:"><span class="category-color bg-color-category-5"></span> Actualitat</a>
+							<a href="javascript:"><span class="category-color bg-color-category-6"></span> Actualitat</a>
+							<a href="javascript:"><span class="category-color bg-color-category-7"></span> Actualitat</a>
+							<a href="javascript:"><span class="category-color bg-color-category-8"></span> Actualitat</a>
+							<a href="javascript:"><span class="category-color bg-color-category-9"></span> Actualitat</a>
+							<a href="javascript:"><span class="category-color bg-color-category-10"></span> Te calent una tarda plujosa</a>
+							<a href="javascript:"><span class="category-color bg-color-category-11"></span> Te calent una tarda plujosa</a>
+							<a href="javascript:"><span class="category-color bg-color-category-12"></span> Te calent una tarda plujosa</a>
+							<a href="javascript:"><span class="category-color bg-color-category-13"></span> Te calent una tarda plujosa</a>
+							<a href="javascript:"><span class="category-color bg-color-category-14"></span> Te calent una tarda plujosa</a>
+							<a href="javascript:"><span class="category-color bg-color-category-15"></span> Te calent una tarda plujosa</a>
+						</div>
+
+						<br>
+
+
+
+						<div class="collapse-control" data-toggle="collapse" data-target="#filter-disciplines">Quines disciplines vols?</div>
+
+						<div id="filter-disciplines" class="collapse filter-list show">
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-1" checked="checked">
+  								<label class="custom-control-label" for="input-discipline-1">Teatre</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-2">
+  								<label class="custom-control-label" for="input-discipline-2">Circ</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-3" checked="checked">
+  								<label class="custom-control-label" for="input-discipline-3">Dansa</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-4">
+  								<label class="custom-control-label" for="input-discipline-4">Familiar</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-5">
+  								<label class="custom-control-label" for="input-discipline-5">Musical</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-6">
+  								<label class="custom-control-label" for="input-discipline-6">Nous formats</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-discipline-7">
+  								<label class="custom-control-label" for="input-discipline-7">Òpera</label>
+							</div>
+
+						</div>
+
+						<br>
+
+
+
+						<div class="collapse-control" data-toggle="collapse" data-target="#filter-edats">Quines edats?</div>
+
+						<div id="filter-edats" class="collapse filter-list show">
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-edats-1" checked="checked">
+  								<label class="custom-control-label" for="input-edats-1">0-3</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-edats-2" checked="checked">
+  								<label class="custom-control-label" for="input-edats-2">4-6</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-edats-3" checked="checked">
+  								<label class="custom-control-label" for="input-edats-3">7-11</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-edats-4" checked="checked">
+  								<label class="custom-control-label" for="input-edats-4">12-15</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-edats-5" checked="checked">
+  								<label class="custom-control-label" for="input-edats-5">16-25</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-edats-6">
+  								<label class="custom-control-label" for="input-edats-6">26-35</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-edats-7">
+  								<label class="custom-control-label" for="input-edats-7">36-50</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-edats-8">
+  								<label class="custom-control-label" for="input-edats-8">51-66</label>
+							</div>
+
+						    <div class="custom-control custom-checkbox">
+  								<input type="checkbox" class="custom-control-input" id="input-edats-9">
+  								<label class="custom-control-label" for="input-edats-9">+66</label>
+							</div>
+						
+						</div>
+
+						<br>
+
+
+						<div class="banner">
+							<a href="#"><img src="images/placeholder/banner-aside.jpg" alt=""></a>
+						</div>
+
+						<br>
+
+						<div class="banner">
+							<a href="#"><img src="images/placeholder/banner-aside-2.jpg" alt=""></a>
+						</div>
+
+					</aside>
+
+
+					<main class="col-md-9">
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<div class="ranking">1</div>
+								
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-15"></span>
+									<span class="category-color bg-color-category-14"></span>
+									<span class="category-color bg-color-category-13"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<h4 class="padding-ranking"><a href="#">Non solum</a></h4>
+
+									<div class="row">
+										<div class="col-sm">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-sm text-right">
+											<p>
+												<small>La Factoria d'Arts Escèniques de Banyoles</small><br>
+												<small>2/12/2016 - 28/10/2017</small>
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-9 height-3-lines">
+											<p>
+												Aquí posem les 3 primeres línies de la SINOPSI. Clicant el cuadre anem a la pàgina de la fitxa d’aquesta obra. Un home es multiplica per respondre una pregunta: Què està passant aquí? Mentre un riu del no-res, l’altre canta una cançó i un altre ens explica la seva ...
+											</p>
+										</div>
+										<div class="col-lg-3 text-right">
+											<div class="critics-icons">
+												<a href="#" class="more-critics">+</a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-muted">Crítiques (3)</span>
+											<span class="number-box">8,8</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<div class="ranking">33</div>
+								
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-12"></span>
+									<span class="category-color bg-color-category-11"></span>
+									<span class="category-color bg-color-category-10"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<h4 class="padding-ranking"><a href="#">Non solum Non solum Non solum Non solum</a></h4>
+
+									<div class="row">
+										<div class="col-sm">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-sm text-right">
+											<p>
+												<small>La Factoria d'Arts Escèniques de Banyoles</small><br>
+												<small>2/12/2016 - 28/10/2017</small>
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-9 height-3-lines">
+											<p>
+												Aquí posem les 3 primeres línies de la SINOPSI. Clicant el cuadre anem a la pàgina de la fitxa d’aquesta obra. Un home es multiplica per respondre una pregunta: Què està passant aquí? Mentre un riu del no-res, l’altre canta una cançó i un altre ens explica la seva ...
+											</p>
+										</div>
+										<div class="col-lg-3 text-right">
+											<div class="critics-icons">
+												<a href="#" class="more-critics"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-muted">Crítiques (3)</span>
+											<span class="number-box">10,0</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<div class="ranking">1</div>
+								
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-8"></span>
+									<span class="category-color bg-color-category-7"></span>
+									<span class="category-color bg-color-category-6"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<h4 class="padding-ranking"><a href="#">Non solum</a></h4>
+
+									<div class="row">
+										<div class="col-sm">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-sm text-right">
+											<p>
+												<small>La Factoria d'Arts Escèniques de Banyoles</small><br>
+												<small>2/12/2016 - 28/10/2017</small>
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-9 height-3-lines">
+											<p>
+												Aquí posem les 3 primeres línies de la SINOPSI. Clicant el cuadre anem a la pàgina de la fitxa d’aquesta obra. Un home es multiplica per respondre una pregunta: Què està passant aquí? Mentre un riu del no-res, l’altre canta una cançó i un altre ens explica la seva ...
+											</p>
+										</div>
+										<div class="col-lg-3 text-right">
+											<div class="critics-icons">
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-muted">Crítiques (3)</span>
+											<span class="number-box">8,8</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<div class="ranking">33</div>
+								
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-8"></span>
+									<span class="category-color bg-color-category-7"></span>
+									<span class="category-color bg-color-category-6"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<h4 class="padding-ranking"><a href="#">Non solum Non solum Non solum Non solum</a></h4>
+
+									<div class="row">
+										<div class="col-sm">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-sm text-right">
+											<p>
+												<small>La Factoria d'Arts Escèniques de Banyoles</small><br>
+												<small>2/12/2016 - 28/10/2017</small>
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-9 height-3-lines">
+											<p>
+												Aquí posem les 3 primeres línies de la SINOPSI. Clicant el cuadre anem a la pàgina de la fitxa d’aquesta obra. Un home es multiplica per respondre una pregunta: Què està passant aquí? Mentre un riu del no-res, l’altre canta una cançó i un altre ens explica la seva ...
+											</p>
+										</div>
+										<div class="col-lg-3 text-right">
+											<div class="critics-icons">
+												<a href="#" class="more-critics">+</a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-muted">Crítiques (3)</span>
+											<span class="number-box">10,0</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<div class="ranking">1</div>
+								
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-8"></span>
+									<span class="category-color bg-color-category-7"></span>
+									<span class="category-color bg-color-category-6"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<h4 class="padding-ranking"><a href="#">Non solum</a></h4>
+
+									<div class="row">
+										<div class="col-sm">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-sm text-right">
+											<p>
+												<small>La Factoria d'Arts Escèniques de Banyoles</small><br>
+												<small>2/12/2016 - 28/10/2017</small>
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-9 height-3-lines">
+											<p>
+												Aquí posem les 3 primeres línies de la SINOPSI. Clicant el cuadre anem a la pàgina de la fitxa d’aquesta obra. Un home es multiplica per respondre una pregunta: Què està passant aquí? Mentre un riu del no-res, l’altre canta una cançó i un altre ens explica la seva ...
+											</p>
+										</div>
+										<div class="col-lg-3 text-right">
+											<div class="critics-icons">
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-muted">Crítiques (3)</span>
+											<span class="number-box">8,8</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+						<article class="recomana-article">
+							
+							<aside class="image" style="background-image: url(images/placeholder/article.jpg)">
+								<a href="#" title=""></a>
+							</aside>
+
+							<main>
+
+								<div class="ranking">33</div>
+								
+								<header class="categories-bar">
+									<span class="category-color bg-color-category-8"></span>
+									<span class="category-color bg-color-category-7"></span>
+									<span class="category-color bg-color-category-6"></span>
+									<span class="label">Teatre</span>
+								</header>
+
+								<div class="container">
+									<h4 class="padding-ranking"><a href="#">Non solum Non solum Non solum Non solum</a></h4>
+
+									<div class="row">
+										<div class="col-sm">
+											<p class="font-roboto-condensed">
+												Companyia: <strong>La Tresca i Xirriquiteula</strong><br>
+												Direcció: <strong>Iolanda Llansó</strong>
+											</p>
+										</div>
+										<div class="col-sm text-right">
+											<p>
+												<small>La Factoria d'Arts Escèniques de Banyoles</small><br>
+												<small>2/12/2016 - 28/10/2017</small>
+											</p>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-9 height-3-lines">
+											<p>
+												Aquí posem les 3 primeres línies de la SINOPSI. Clicant el cuadre anem a la pàgina de la fitxa d’aquesta obra. Un home es multiplica per respondre una pregunta: Què està passant aquí? Mentre un riu del no-res, l’altre canta una cançó i un altre ens explica la seva ...
+											</p>
+										</div>
+										<div class="col-lg-3 text-right">
+											<div class="critics-icons">
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+												<a href="#" class="critic-icon" style="background-image: url(images/placeholder/critic.jpg)" data-toggle="tooltip" data-placement="bottom" title="Nombre del critic"></a>
+											</div>
+											<span class="text-muted">Crítiques (3)</span>
+											<span class="number-box">10,0</span>
+
+										</div><!--  /.col -->
+									</div><!--  /.row -->
+									
+									
+								</div><!--  /.container -->
+								
+							</main>
+
+						</article>
+
+
+					</main>
+
+				</div><!--  /.recomana-listing -->
+
+			</div><!--  /.container -->
+
+		</section>
+
+	</main>
+
+
+	<footer>
+		<div class="container">
+			<div class="banner">
+				<a href="#"><img src="images/placeholder/banner-footer.jpg" alt=""></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">PORTADA</a></li>
+					<li><a href="#">QUÈ ÉS?</a></li>
+					<li><a href="#">CONTACTE</a></li>
+					<li><a href="#">AVÍ­S LEGAL</a></li>
+				</ul>
+			</nav>
+			<div class="copy">© 2012-2018 recomana.cat</div>
+		</div>
+	</footer>
+
+	<!-- Le javascript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="js/node_modules/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="js/node_modules/jquery-ui-1.12.1.custom/i18n/datepicker-ca.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>
