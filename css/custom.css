@@ -103,6 +103,7 @@ body {
 	background-image: url(../images/background.png);
 	background-repeat: repeat-y;
 	background-position: center;
+	overflow-x: hidden;
 }
 a { 
 	color: var(--color-recomana-red);
@@ -1159,6 +1160,7 @@ body > header.mini .megamenu {
 /* square-article */
 
 .square-article {
+	display: block;
 	background-size: cover;
 	background-position: center center;
 	padding-bottom: 100%;
@@ -1167,6 +1169,7 @@ body > header.mini .megamenu {
 	font-family: var(--font-roboto-condensed);
 	font-size: 12px;
 	line-height: 1.2;
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 }
 .square-article main {
 	position: absolute;

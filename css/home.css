@@ -1,9 +1,6 @@
 section#home {
 	margin-top: -15px;
 }
-section#home .container {
-	padding: 0;
-}
 section#home h5.block-title {
 	text-transform: uppercase;
 	color: var(--color-recomana-red);
@@ -49,12 +46,6 @@ section#home .all-categories.categories-bar .category-color {
 
 
 
-section#home #home-slider-2 .square-article {
-}
-
-
-section#home .four-articles {
-}
 section#home .four-articles h5.block-title {
 	height: 70px;
 	display: flex;
