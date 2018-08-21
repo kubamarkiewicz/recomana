@@ -8,3 +8,50 @@ section#cartellera #datepicker {
 }
 
 
+#megamenu-cartellera {padding-top: 24px;padding-bottom: 24px;}
+#megamenu-cartellera .links {padding-left: 0;}
+#megamenu-cartellera .links a {
+	display: block;
+	text-transform: uppercase;
+	color: var(--color-recomana-black);
+	font-weight: 700;
+	padding: 0 0 0 26px;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #b5b5b5;
+	height: 66px;
+	line-height: 66px;
+}
+#megamenu-cartellera .links a:last-child {
+	border-bottom-width: 1px;
+}
+#megamenu-cartellera .links a:hover {
+	color: var(--color-recomana-red);
+}
+#megamenu-cartellera .articles {
+	margin-top: 7px;
+	margin-right: 0;
+}
+#megamenu-cartellera .articles article {
+    font-size: 11px;
+    font-family: var(--font-roboto);
+}
+#megamenu-cartellera .articles article .image {
+	display: block;
+	padding-bottom: 100%;
+	background-size: cover;
+	background-position: center;
+}
+#megamenu-cartellera .articles article main {
+	background-color: #ffffff;
+	padding: 6px 10px;
+}
+#megamenu-cartellera .articles article main h6 {
+	margin-bottom: 2px;
+}
+#megamenu-cartellera .articles article .categories-bar {
+	font-size: 12px;
+}
+#megamenu-cartellera .articles article .categories-bar .category-color {
+	width: 18px;
+}

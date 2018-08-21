@@ -14,6 +14,8 @@
     <link href="css/home.css" rel="stylesheet">
     <link href="css/et-recomanem.css" rel="stylesheet">
     <link href="css/cartellera.css" rel="stylesheet">
+    <link href="css/qui-som.css" rel="stylesheet">
+    <link href="css/obra.css" rel="stylesheet">
 
 	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
@@ -27,10 +29,10 @@
 			
 			<nav class="sub-menu">
 				<ul>
-					<li><a href="#">QUÈ ÉS?</a></li>
-					<li><a href="#">Contacte</a></li>
-					<li class="social-icon fb"><a href="#" target="_blank">facebook</a></li>
-					<li class="social-icon twitter"><a href="#" target="_blank">twitter</a></li>
+					<li><a href="javascript:">QUÈ ÉS?</a></li>
+					<li><a href="javascript:">Contacte</a></li>
+					<li class="social-icon fb"><a href="javascript:" target="_blank">facebook</a></li>
+					<li class="social-icon twitter"><a href="javascript:" target="_blank">twitter</a></li>
 				</ul>
 			</nav>
 
@@ -40,7 +42,7 @@
 			</form>
 			
 			<div class="banner">
-				<a href="#">
+				<a href="javascript:">
 					<img src="images/placeholder/banner-header.jpg" alt="">
 				</a>
 			</div>
@@ -64,14 +66,197 @@
 			</nav>
 
 			<!-- megamenus -->
-<!-- 			<div class="megamenu" data-megamenu="portada">
-				megamenu portada
-			</div>
-			<div class="megamenu" data-megamenu="cartellera">
-				megamenu cartellera
-			</div> -->
+			<div id="megamenu-portada" class="megamenu" data-megamenu="portada">
+				<div class="arrow"></div>
+				<header>
+					<div class="container">
+						<div class="row">
+							<div class="col-3">
+								<strong class="text-uppercase">Les millor valorades. Top 10</strong>
+							</div>
+							<div class="col-5">
+								<strong class="recomana-red">Què et bé de gust?</strong>
+							</div>
+							<div class="col-2">
+								<strong class="recomana-red">Quina disciplina vols?</strong>
+							</div>
+							<div class="col-2">
+								<strong class="recomana-red">Quina edat?</strong>
+							</div>
+						</div>
+					</div>
+				</header>
+				<main>
+					<div class="container">
+						<div class="row">
+							<div class="col-3">
+								<ul class="top-10">
+									<li>
+										<a href="javascript:" style="background-image: url(images/placeholder/article-1.jpg)"><span class="rank">1</span></a>
+									</li>
+									<li>
+										<a href="javascript:" style="background-image: url(images/placeholder/article-2.jpg)"><span class="rank">2</span></a>
+									</li>
+									<li>
+										<a href="javascript:" style="background-image: url(images/placeholder/article-3.jpg)"><span class="rank">3</span></a>
+									</li>
+									<li>
+										<a href="javascript:" style="background-image: url(images/placeholder/article-4.jpg)"><span class="rank">4</span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-5 column-count-2">
+								<ul>
+									<li><a href="javascript:">Actualitat</a></li>
+									<li><a href="javascript:">Te calent una tarda plujosa</a></li>
+									<li><a href="javascript:">Actualitat</a></li>
+									<li><a href="javascript:">Te calent una tarda plujosa</a></li>
+									<li><a href="javascript:">Actualitat</a></li>
+									<li><a href="javascript:">Te calent una tarda plujosa</a></li>
+									<li><a href="javascript:">Actualitat</a></li>
+									<li><a href="javascript:">Te calent una tarda plujosa</a></li>
+									<li><a href="javascript:">Actualitat</a></li>
+									<li><a href="javascript:">Te calent una tarda plujosa</a></li>
+									<li><a href="javascript:">Actualitat</a></li>
+									<li><a href="javascript:">Te calent una tarda plujosa</a></li>
+									<li><a href="javascript:">Actualitat</a></li>
+									<li><a href="javascript:">Te calent una tarda plujosa</a></li>
+									<li><a href="javascript:">Actualitat</a></li>
+								</ul>
+							</div>
+							<div class="col-2">
+								<ul>
+									<li><a href="javascript:">Teatre</a></li>
+									<li><a href="javascript:">Nous formats</a></li>
+									<li><a href="javascript:">Teatre</a></li>
+									<li><a href="javascript:">Nous formats</a></li>
+									<li><a href="javascript:">Teatre</a></li>
+									<li><a href="javascript:">Nous formats</a></li>
+									<li><a href="javascript:">Teatre</a></li>
+								</ul>
+							</div>
+							<div class="col-2 column-count-2">
+								<ul>
+									<li><a href="javascript:">0-3</a></li>
+									<li><a href="javascript:">16-25</a></li>
+									<li><a href="javascript:">0-3</a></li>
+									<li><a href="javascript:">16-25</a></li>
+									<li><a href="javascript:">0-3</a></li>
+									<li><a href="javascript:">16-25</a></li>
+									<li><a href="javascript:">0-3</a></li>
+									<li><a href="javascript:">16-25</a></li>
+									<li><a href="javascript:">0-3</a></li>
+									<li><a href="javascript:">16-25</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div><!--  /.megamenu  -->
 
-		</div>
+			
+			<div id="megamenu-cartellera" class="megamenu" data-megamenu="cartellera">
+				<div class="arrow"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-2 links">
+							<a href="javascript:">Tota la cartellera</a>
+							<a href="javascript:">Avui</a>
+							<a href="javascript:">Demà</a>
+							<a href="javascript:">Aquesta setmana</a>
+						</div>
+						<div class="col-10">
+						
+							
+							<h5 class="recomana-red text-uppercase">Properes representacions</h5>
+							<div class="row articles">
+
+								<article class="col">
+									<a href="javascript:" class="image" style="background-image: url(images/placeholder/article-1.jpg)"></a>
+									<main>
+										<h6><a href="javascript:">Rosas danst Rosas</a></h6>
+										<strong>4/10 - 5/11</strong>
+									</main>
+									<div class="categories-bar">
+										<span class="number-box">8</span>
+										<span class="category-color bg-color-category-1"></span>
+										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-13"></span>
+										<span class="label">Teatre</span>
+									</div>
+								</article>
+
+								<article class="col">
+									<a href="javascript:" class="image" style="background-image: url(images/placeholder/article-1.jpg)"></a>
+									<main>
+										<h6><a href="javascript:">Rosas danst Rosas</a></h6>
+										<strong>4/10 - 5/11</strong>
+									</main>
+									<div class="categories-bar">
+										<span class="number-box">8</span>
+										<span class="category-color bg-color-category-1"></span>
+										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-13"></span>
+										<span class="label">Teatre</span>
+									</div>
+								</article>
+
+								<article class="col">
+									<a href="javascript:" class="image" style="background-image: url(images/placeholder/article-1.jpg)"></a>
+									<main>
+										<h6><a href="javascript:">Rosas danst Rosas</a></h6>
+										<strong>4/10 - 5/11</strong>
+									</main>
+									<div class="categories-bar">
+										<span class="number-box">8</span>
+										<span class="category-color bg-color-category-1"></span>
+										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-13"></span>
+										<span class="label">Teatre</span>
+									</div>
+								</article>
+
+								<article class="col">
+									<a href="javascript:" class="image" style="background-image: url(images/placeholder/article-1.jpg)"></a>
+									<main>
+										<h6><a href="javascript:">Rosas danst Rosas</a></h6>
+										<strong>4/10 - 5/11</strong>
+									</main>
+									<div class="categories-bar">
+										<span class="number-box">8</span>
+										<span class="category-color bg-color-category-1"></span>
+										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-13"></span>
+										<span class="label">Teatre</span>
+									</div>
+								</article>
+
+								<article class="col">
+									<a href="javascript:" class="image" style="background-image: url(images/placeholder/article-1.jpg)"></a>
+									<main>
+										<h6><a href="javascript:">Rosas danst Rosas</a></h6>
+										<strong>4/10 - 5/11</strong>
+									</main>
+									<div class="categories-bar">
+										<span class="number-box">8</span>
+										<span class="category-color bg-color-category-1"></span>
+										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-13"></span>
+										<span class="label">Teatre</span>
+									</div>
+								</article>
+
+							</div><!--  /.articles  -->
+						
+
+						</div><!--  /.col  -->
+					</div><!--  /.row  -->
+				</div><!--  /.container  -->
+			</div><!--  /.megamenu  -->
+
+			<!-- /megamenus -->
+
+		</div><!--  /.container  -->
 
 	</header>
 
@@ -85,28 +270,28 @@
 
 				<div class="row small-gutters">
 					
-					<div class="col-md">
+					<div class="col-md-6">
 
 						<h5 class="block-title">ET REcomanem</h5>
 						
-						<div id="home-slider-1" class="carousel slide" data-ride="carousel">
+						<div id="home-slider-1" class="carousel slide" data-ride="carousel" data-interval="5000">
 							<div class="carousel-inner">
 
 								<div class="carousel-item active">
 									
 									<article class="square-article align-middle" style="background-image: url(images/placeholder/article-1.jpg)">
 										<main>
-											<div class="overlay">
+											<a href="obra-info.html" class="overlay">
 												<h3>Rosas danst Rosas</h3>
 												<p class="date">4/10 - 5/11</p>
 												<div>Toni Polo. 9/10/2017</div>
 												<h4 class="font-roboto">La caiguda d'Occident</h4>
-											</div>
+											</a>
 											<div class="categories-bar">
 												<span class="number-box">10</span>
-												<span class="category-color category-espectacular"></span>
-												<span class="category-color category-intim"></span>
-												<span class="category-color category-fosc"></span>
+												<span class="category-color bg-color-category-10"></span>
+												<span class="category-color bg-color-category-2"></span>
+												<span class="category-color bg-color-category-3"></span>
 												<div class="label">Teatre</div>
 											</div>
 										</main>
@@ -118,17 +303,17 @@
 									
 									<article class="square-article align-middle" style="background-image: url(images/placeholder/article-2.jpg)">
 										<main>
-											<div class="overlay">
+											<a href="obra-info.html" class="overlay">
 												<h3>Islàndia</h3>
 												<p class="date">4/10 - 5/11</p>
 												<div>Toni Polo. 9/10/2017</div>
 												<h4 class="font-roboto">La caiguda d'Occident</h4>
-											</div>
+											</a>
 											<div class="categories-bar">
 												<span class="number-box">10</span>
-												<span class="category-color category-espectacular"></span>
-												<span class="category-color category-intim"></span>
-												<span class="category-color category-fosc"></span>
+												<span class="category-color bg-color-category-10"></span>
+												<span class="category-color bg-color-category-2"></span>
+												<span class="category-color bg-color-category-3"></span>
 												<div class="label">Teatre</div>
 											</div>
 										</main>
@@ -141,17 +326,17 @@
 									
 									<article class="square-article align-middle" style="background-image: url(images/placeholder/article-3.jpg)">
 										<main>
-											<div class="overlay">
+											<a href="obra-info.html" class="overlay">
 												<h3>Rosas danst Rosas</h3>
 												<p class="date">4/10 - 5/11</p>
 												<div>Toni Polo. 9/10/2017</div>
 												<h4 class="font-roboto">La caiguda d'Occident</h4>
-											</div>
+											</a>
 											<div class="categories-bar">
 												<span class="number-box">10</span>
-												<span class="category-color category-espectacular"></span>
-												<span class="category-color category-intim"></span>
-												<span class="category-color category-fosc"></span>
+												<span class="category-color bg-color-category-10"></span>
+												<span class="category-color bg-color-category-2"></span>
+												<span class="category-color bg-color-category-3"></span>
 												<div class="label">Teatre</div>
 											</div>
 										</main>
@@ -161,7 +346,7 @@
 	
 
 							</div><!--  /.carousel-inner  -->
-							<a class="carousel-control-prev" href="#home-slider-1" role="button" data-slide="prev">
+							<a class="carousel-control-prev" href="#home-slider-1" role="button" data-slide="prev" data-interval="5000">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 								<span class="sr-only">Previous</span>
 							</a>
@@ -173,7 +358,7 @@
 						</div> <!-- /#home-slider-1  -->
 
 					</div><!--  /.col  -->
-					<div class="col-md">
+					<div class="col-md-6">
 						
 						<h5 class="block-title">REcomanats per categoria&nbsp; <span class="category color-category-11">Pròxima estació, esperança</span></h5>
 
@@ -293,9 +478,9 @@
 											</div>
 											<div class="categories-bar">
 												<span class="number-box">10</span>
-												<span class="category-color category-espectacular"></span>
-												<span class="category-color category-intim"></span>
-												<span class="category-color category-fosc"></span>
+												<span class="category-color bg-color-category-10"></span>
+												<span class="category-color bg-color-category-2"></span>
+												<span class="category-color bg-color-category-3"></span>
 												<div class="label">Teatre</div>
 											</div>
 										</main>
@@ -313,9 +498,9 @@
 											</div>
 											<div class="categories-bar">
 												<span class="number-box">10</span>
-												<span class="category-color category-espectacular"></span>
-												<span class="category-color category-intim"></span>
-												<span class="category-color category-fosc"></span>
+												<span class="category-color bg-color-category-10"></span>
+												<span class="category-color bg-color-category-2"></span>
+												<span class="category-color bg-color-category-3"></span>
 												<div class="label">Teatre</div>
 											</div>
 										</main>
@@ -333,9 +518,9 @@
 											</div>
 											<div class="categories-bar">
 												<span class="number-box">10</span>
-												<span class="category-color category-espectacular"></span>
-												<span class="category-color category-intim"></span>
-												<span class="category-color category-fosc"></span>
+												<span class="category-color bg-color-category-10"></span>
+												<span class="category-color bg-color-category-2"></span>
+												<span class="category-color bg-color-category-3"></span>
 												<div class="label">Teatre</div>
 											</div>
 										</main>
@@ -366,9 +551,9 @@
 											</div>
 											<div class="categories-bar">
 												<span class="number-box">10</span>
-												<span class="category-color category-espectacular"></span>
-												<span class="category-color category-intim"></span>
-												<span class="category-color category-fosc"></span>
+												<span class="category-color bg-color-category-10"></span>
+												<span class="category-color bg-color-category-2"></span>
+												<span class="category-color bg-color-category-3"></span>
 												<div class="label">Teatre</div>
 											</div>
 										</main>
@@ -386,9 +571,9 @@
 											</div>
 											<div class="categories-bar">
 												<span class="number-box">10</span>
-												<span class="category-color category-espectacular"></span>
-												<span class="category-color category-intim"></span>
-												<span class="category-color category-fosc"></span>
+												<span class="category-color bg-color-category-10"></span>
+												<span class="category-color bg-color-category-2"></span>
+												<span class="category-color bg-color-category-3"></span>
 												<div class="label">Teatre</div>
 											</div>
 										</main>
@@ -406,9 +591,9 @@
 											</div>
 											<div class="categories-bar">
 												<span class="number-box">10</span>
-												<span class="category-color category-espectacular"></span>
-												<span class="category-color category-intim"></span>
-												<span class="category-color category-fosc"></span>
+												<span class="category-color bg-color-category-10"></span>
+												<span class="category-color bg-color-category-2"></span>
+												<span class="category-color bg-color-category-3"></span>
 												<div class="label">Teatre</div>
 											</div>
 										</main>
@@ -452,9 +637,9 @@
 								</div>
 								<div class="categories-bar">
 									<span class="number-box">10</span>
-									<span class="category-color category-espectacular"></span>
-									<span class="category-color category-intim"></span>
-									<span class="category-color category-fosc"></span>
+									<span class="category-color bg-color-category-10"></span>
+									<span class="category-color bg-color-category-2"></span>
+									<span class="category-color bg-color-category-3"></span>
 									<div class="label">Teatre</div>
 								</div>
 							</main>
@@ -473,9 +658,9 @@
 								</div>
 								<div class="categories-bar">
 									<span class="number-box">6.5</span>
-									<span class="category-color category-diferent"></span>
-									<span class="category-color category-controvertit"></span>
-									<span class="category-color category-fosc"></span>
+									<span class="category-color bg-color-category-5"></span>
+									<span class="category-color bg-color-category-6"></span>
+									<span class="category-color bg-color-category-3"></span>
 									<div class="label">DANSA</div>
 								</div>
 								<div class="red-bar"><h6>Teatre Gaudí Barcelona</h6></div>
@@ -524,12 +709,12 @@
 				<div class="row small-gutters">
 					<div class="col-md">
 						<div class="banner">
-							<a href="#"><img src="images/placeholder/banner-home.png" alt=""></a>
+							<a href="javascript:"><img src="images/placeholder/banner-home.png" alt=""></a>
 						</div>
 					</div>
 					<div class="col-md">
 						<div class="banner">
-							<a href="#"><img src="images/placeholder/banner-home.png" alt=""></a>
+							<a href="javascript:"><img src="images/placeholder/banner-home.png" alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -551,14 +736,14 @@
 	<footer>
 		<div class="container">
 			<div class="banner">
-				<a href="#"><img src="images/placeholder/banner-footer.jpg" alt=""></a>
+				<a href="javascript:"><img src="images/placeholder/banner-footer.jpg" alt=""></a>
 			</div>
 			<nav>
 				<ul>
 					<li><a href="index.html">PORTADA</a></li>
-					<li><a href="#">QUÈ ÉS?</a></li>
-					<li><a href="#">CONTACTE</a></li>
-					<li><a href="#">AVÍ­S LEGAL</a></li>
+					<li><a href="javascript:">QUÈ ÉS?</a></li>
+					<li><a href="javascript:">CONTACTE</a></li>
+					<li><a href="javascript:">AVÍ­S LEGAL</a></li>
 				</ul>
 			</nav>
 			<div class="copy">© 2012-2018 recomana.cat</div>

@@ -1,0 +1,227 @@
+section#obra {}
+
+section#obra #obra-carousel {
+    margin-bottom: 30px;
+}
+
+section#obra #obra-carousel .carousel-item {
+    padding-bottom: 35%;
+}
+
+section#obra .obra-header {
+    border-bottom: 1px solid var(--color-recomana-red);
+    margin-bottom: 35px;
+}
+
+section#obra .obra-header .categories-bar {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+section#obra .obra-header nav {
+    font-size: 18px;
+    font-family: var(--font-roboto-condensed);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px 0 0 0;
+}
+
+section#obra .obra-header nav a {
+    color: var(--color-recomana-black);
+}
+
+section#obra .obra-header nav a:hover,
+section#obra .obra-header nav a.selected {
+    color: var(--color-recomana-red);
+}
+
+section#obra .critiques {
+    max-height: 676px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+section#obra .critiques>article {
+    padding: 18px 0;
+    border-bottom: 1px solid #bfbebe;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+section#obra .critiques>article.selected {
+    background-color: #f8f8f8;
+}
+
+section#obra .critiques>article .image {
+    display: block;
+    float: left;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+section#obra .critiques>article main {
+    margin-left: 95px;
+}
+
+section#obra .critiques>article .box-title {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+section#obra .critiques>article .box-title a {
+    color: #ffffff;
+}
+
+section#obra .critiques>article.selected .box-title:after {
+    content: ">";
+    position: absolute;
+    color: #ffffff;
+    right: 6px;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1;
+    top: -2px;
+    font-family: var(--font-roboto-condensed);
+}
+
+section#obra .critiques>article .categories-bar {
+    background-color: transparent;
+}
+
+section#obra .critiques>article .number-box {
+    background-color: #f5f5f5;
+}
+
+section#obra .valoracion {
+    padding: 16px 16px 24px 16px;
+    font-size: 12px;
+}
+
+section#obra .valoracion .number-box-big {
+    margin-right: 4px;
+    float: left;
+    margin-bottom: 4px;
+}
+
+section#obra .valoracion.valoracion-critics {}
+section#obra .valoracion.valoracion-critics table.valoracion-per-edats {
+	margin-left: auto;
+}
+
+section#obra .valoracion.valoracion-usuaris {}
+
+
+
+section#obra .obra-aside .display-3 {
+    background-color: var(--color-recomana-red);
+    color: #ffffff;
+    padding-left: 6px;
+    width: 131px;
+}
+
+section#obra .obra-main {
+}
+section#obra .obra-main .critica {
+    margin-top: 40px;
+}
+section#obra .obra-main .critica > aside {
+    font-size: 12px;
+}
+section#obra .obra-main .critica > aside .label {
+    margin-bottom: 3px;
+}
+section#obra .obra-main .critica .critic-image {
+    display: block;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    height: 150px;
+}
+section#obra .obra-main .critica > main .critica-title {
+    margin-top: 73px;
+}
+section#obra .obra-main .critica > main .critica-text {
+    margin-top: 40px;
+    margin-bottom: 55px;
+}
+
+section#obra .autor-image {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
+    margin-right: 8px;
+    vertical-align: bottom;
+}
+
+section#obra .obra-info > main {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+section#obra .obra-info > aside {
+    margin-bottom: 30px;
+}
+section#obra .obra-info > main small {
+    font-size: 90%;
+}
+
+
+section#obra article.programacion {
+    background-color: #f9f9f9;
+    padding: 15px 15px 10px 15px;
+    line-height: 1.3;
+}
+section#obra article.programacion + article.programacion {
+    border-top: 1px solid #a0a0a0;
+}
+
+section#obra .entrada {
+    background-image: url(../images/entrada.png);
+    background-size: cover;
+    background-position: center;
+    color: white !important;
+    font-weight: bold;
+    font-family: var(--font-roboto-condensed);
+    width: 119px;
+    height: 28px;
+    display: block;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 12px;
+}
+
+section#obra .historic-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 240px;
+}
+
+
+/* mobile */
+
+@media (max-width: 575.98px) {
+
+/*    section#obra .historic-scroll {
+        overflow-y: hidden;
+        max-height: none;
+    }*/
+}
+
+@media (max-width: 767.98px) {
+
+    section#obra .critiques {
+        max-height: none;
+        overflow-y: hidden;
+    }
+}
+
