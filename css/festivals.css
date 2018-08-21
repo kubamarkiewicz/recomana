@@ -32,3 +32,18 @@ section#festivals .square-article .overlay.itineraris-recomana {
 	background-repeat: no-repeat;
 	padding-right: 55px;
 }
+
+
+
+section#festival-programa {
+
+}
+section#festival-programa #festival-carousel {
+    margin-bottom: 30px;
+}
+
+section#festival-programa #festival-carousel .carousel-item {
+    padding-bottom: 35%;
+    background-size: cover;
+    background-position: center;
+}

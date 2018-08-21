@@ -6,6 +6,8 @@ section#obra #obra-carousel {
 
 section#obra #obra-carousel .carousel-item {
     padding-bottom: 35%;
+    background-size: cover;
+    background-position: center;
 }
 
 section#obra .obra-header {
@@ -148,19 +150,6 @@ section#obra .obra-main .critica > main .critica-title {
 section#obra .obra-main .critica > main .critica-text {
     margin-top: 40px;
     margin-bottom: 55px;
-}
-
-section#obra .autor-image {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    border: 1px solid white;
-    box-shadow: 0 0 2px 0 rgba(0,0,0,0.5);
-    margin-right: 8px;
-    vertical-align: bottom;
 }
 
 section#obra .obra-info > main {
