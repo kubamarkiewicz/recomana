@@ -532,7 +532,11 @@ label {
 /* Shared Components	               		   */
 /***********************************************/
 
-
+a[name=main]:before {
+	content:"";
+	position: absolute;
+	margin-top: -115px;
+}
 
 .number-box,
 .number-box-big {
