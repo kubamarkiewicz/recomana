@@ -15,7 +15,7 @@ $(function() {
     onScroll();
 
 
-    // burger menu
+    // toggle burger menu
     $('body > header .burger').click(function(){
     	$('body > header nav.main-menu').toggleClass('open');
     });
@@ -49,6 +49,13 @@ $(function() {
     // fold text
     $('.fold-toggle').click(function(){
         $(this).parent().toggleClass('open');
+    });
+
+
+    // datepicker language and format
+    $.datepicker.setDefaults({
+        regional: $.datepicker.regional["ca"],
+        dateFormat: 'yy-mm-dd'
     });
     
 

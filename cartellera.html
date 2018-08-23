@@ -28,13 +28,11 @@
 
 			<a href="index.html" class="logo" title="recomana"></a>
 			
-			<nav class="sub-menu">
-				<ul>
-					<li><a href="javascript:">QUÈ ÉS?</a></li>
-					<li><a href="javascript:">Contacte</a></li>
-					<li class="social-icon fb"><a href="javascript:" target="_blank">facebook</a></li>
-					<li class="social-icon twitter"><a href="javascript:" target="_blank">twitter</a></li>
-				</ul>
+			<nav class="submenu">
+				<a href="javascript:">QUÈ ÉS?</a>
+				<a href="javascript:">Contacte</a>
+				<a class="social-icon facebook" href="javascript:" target="_blank" title="Facebook"></a>
+				<a class="social-icon twitter" href="javascript:" target="_blank" title="Twitter"></a>
 			</nav>
 
 			<form class="search form-inline">
@@ -262,6 +260,8 @@
 	</header>
 
 
+
+	<!-- page main ---------------------------------------------------------------------------------- -->
 	<main>
 
 		<section id="cartellera">
@@ -272,7 +272,9 @@
 
 				<div class="recomana-listing row">
 
-					<aside class="col-md-3">
+					<!-- section S I D E B A R <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+					<aside class="col-lg-3 col-md-4">
 
 						<h6 class="box-title">Filtres</h6>
 
@@ -381,7 +383,9 @@
 					</aside>
 
 
-					<main class="col-md-9">
+					<!-- section  M A I N >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+					<main class="col-lg-9 col-md-8">
 
 						<div class="filters-top">
 							Ordenar per: 
@@ -737,11 +741,9 @@
 
 		$(function() {
 
-			$.datepicker.setDefaults($.datepicker.regional["ca"]);
 			$("#datepicker").datepicker({
 				inline: true,
 				defaultDate: "2018-08-30", // set selected date
-				dateFormat: "yy-mm-dd", 
 		        onSelect: function () {
 		            var selectedDate = $.datepicker.formatDate("yy-mm-dd", $(this).datepicker('getDate'));
 		        	alert(selectedDate);

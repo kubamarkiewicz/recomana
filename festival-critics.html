@@ -28,13 +28,11 @@
 
 			<a href="index.html" class="logo" title="recomana"></a>
 			
-			<nav class="sub-menu">
-				<ul>
-					<li><a href="javascript:">QUÈ ÉS?</a></li>
-					<li><a href="javascript:">Contacte</a></li>
-					<li class="social-icon fb"><a href="javascript:" target="_blank">facebook</a></li>
-					<li class="social-icon twitter"><a href="javascript:" target="_blank">twitter</a></li>
-				</ul>
+			<nav class="submenu">
+				<a href="javascript:">QUÈ ÉS?</a>
+				<a href="javascript:">Contacte</a>
+				<a class="social-icon facebook" href="javascript:" target="_blank" title="Facebook"></a>
+				<a class="social-icon twitter" href="javascript:" target="_blank" title="Twitter"></a>
 			</nav>
 
 			<form class="search form-inline">
@@ -262,6 +260,7 @@
 	</header>
 
 
+	<!-- page main ---------------------------------------------------------------------------------- -->
 	<main>
 
 		<section id="festival-programa">
@@ -286,16 +285,16 @@
 			</div><!--  /.container -->
 
 
-			<a name="main"></a>
+			<a name="start"></a>
 
 			<div class="container">
 
 				<h1 class="display-1 mb-3">FESTIVAL TEMPORADA ALTA 2017</h1>
 
 				<div class="float-right">
-					<a href="javascript:" target="_blank" class="icon-www" title="www.web.com"></a>
-					<a href="javascript:" target="_blank" class="icon-facebook" title="Facebook"></a>
-					<a href="javascript:" target="_blank" class="icon-twitter" title="Twitter"></a>
+					<a href="javascript:" target="_blank" class="social-icon www" title=""></a>
+					<a href="javascript:" target="_blank" class="social-icon facebook" title="Facebook"></a>
+					<a href="javascript:" target="_blank" class="social-icon twitter" title="Twitter"></a>
 				</div>
 				<div class="lead mb-4">Dates: <strong>11/10 - 11/12</strong></div>
 
@@ -311,6 +310,8 @@
 
 
 				<div class="recomana-listing row">
+
+					<!-- section S I D E B A R <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 
 					<aside class="col-lg-3 col-md-4">
 
@@ -403,6 +404,8 @@
 
 					</aside>
 
+
+					<!-- section  M A I N >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
 					<main class="col-lg-9 col-md-8">
 
@@ -775,15 +778,13 @@
 	<script src="js/custom.js"></script>
 							
 	<script>
-		// scripts for festival-programa page
+		// scripts for festival-critics page
 
 		$(function() {
 
-			$.datepicker.setDefaults($.datepicker.regional["ca"]);
 			$("#datepicker").datepicker({
 				inline: true,
 				defaultDate: "2018-08-30", // set selected date
-				dateFormat: "yy-mm-dd", 
 		        onSelect: function () {
 		            var selectedDate = $.datepicker.formatDate("yy-mm-dd", $(this).datepicker('getDate'));
 		        	alert(selectedDate);
