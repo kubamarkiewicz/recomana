@@ -1,14 +1,7 @@
-section#obra {}
-
 section#obra #obra-carousel {
     margin-bottom: 30px;
 }
 
-section#obra #obra-carousel .carousel-item {
-    padding-bottom: 35%;
-    background-size: cover;
-    background-position: center;
-}
 
 section#obra .obra-header {
     border-bottom: 1px solid var(--color-recomana-red);
@@ -124,32 +117,8 @@ section#obra .obra-aside .display-3 {
     width: 131px;
 }
 
-section#obra .obra-main {
-}
 section#obra .obra-main .critica {
     margin-top: 40px;
-}
-section#obra .obra-main .critica > aside {
-    font-size: 12px;
-}
-section#obra .obra-main .critica > aside .label {
-    margin-bottom: 3px;
-}
-section#obra .obra-main .critica .critic-image {
-    display: block;
-    width: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    margin-bottom: 40px;
-    height: 150px;
-}
-section#obra .obra-main .critica > main .critica-title {
-    margin-top: 73px;
-}
-section#obra .obra-main .critica > main .critica-text {
-    margin-top: 40px;
-    margin-bottom: 55px;
 }
 
 section#obra .obra-info > main {

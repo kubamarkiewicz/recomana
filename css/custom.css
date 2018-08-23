@@ -31,6 +31,7 @@
 }
 .bg-red {
 	background-color: var(--color-recomana-red) !important;
+	color: white;
 }
 .border, .border-red, .border-top, .border-bottom, .border-left, .border-right {
 	border-color: var(--color-recomana-red)!important;
@@ -320,6 +321,11 @@ body > main {
 /* Bootstrap Components                        */
 /***********************************************/
 
+.carousel-item {
+    padding-bottom: 35%;
+    background-size: cover;
+    background-position: center;
+}
 .carousel-control-prev,
 .carousel-control-next {
 	width: 2em;
@@ -1042,7 +1048,7 @@ body > header.mini .megamenu {
 
 
 /* mobile */
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
 
 	.recomana-listing > aside .banner {
 		display: none;
@@ -1439,3 +1445,28 @@ table.valoracion-per-edats td:nth-child(3) {
     display: none;
 }
 
+
+
+
+.critica > aside {
+    font-size: 12px;
+}
+.critica > aside .label {
+    margin-bottom: 3px;
+}
+.critica .critic-image {
+    display: block;
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    height: 150px;
+}
+.critica > main .critica-title {
+    margin-top: 73px;
+}
+.critica > main .critica-text {
+    margin-top: 40px;
+    margin-bottom: 55px;
+}
