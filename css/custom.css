@@ -1084,7 +1084,7 @@ body > header.mini .megamenu {
 	color: #ffffff;
 	font-family: var(--font-roboto-condensed);
 	text-transform: uppercase;
-	padding: 0.4em 15px 0.3em;
+	padding: 0.5em 15px 0.3em;
 	line-height: 1;
 	/* height: 20px; */
 	margin-bottom: 12px;
