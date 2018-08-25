@@ -23,6 +23,9 @@
 .recomana-red {
 	color: var(--color-recomana-red);
 }
+.recomana-black {
+	color: var(--color-recomana-black);
+}
 .text-muted {
 	color: #545454;
 }
@@ -216,6 +219,14 @@ p {
 img {
 	max-width: 100%;
 }
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 35%;  /* proportions 16by9 */
+}
+.bg-image-3by2 {
+	padding-bottom: 66%;
+}
 
 .label {
 	text-transform: uppercase;
@@ -321,11 +332,6 @@ body > main {
 /* Bootstrap Components                        */
 /***********************************************/
 
-.carousel-item {
-    padding-bottom: 35%;
-    background-size: cover;
-    background-position: center;
-}
 .carousel-control-prev,
 .carousel-control-next {
 	width: 2em;
@@ -367,6 +373,14 @@ body > main {
 
 .modal-backdrop.show {
 	opacity: 0.75;
+}
+
+.table td, .table th {
+	border-top: none;
+}
+
+.table-sm td, .table-sm th {
+	padding: 0.2em 0.3em;
 }
 
 
@@ -475,8 +489,11 @@ body > main {
 
 .form-control {
 	border-radius: 0;
-	border-color: #cccccc;
+	border-color: #535353;
 	box-shadow: none !important;
+}
+.form-control:focus {
+	border-color: var(--color-recomana-red);
 }
 .form-control::placeholder {
 	color: #aaaaaa;
@@ -489,6 +506,10 @@ label {
 
 .custom-control {
 	padding-left: 27px;
+	margin-bottom: 2px;
+}
+.custom-control-label {
+	padding-top: 0.25em;
 }
 .custom-control-label::before {
 	background: transparent;
@@ -541,6 +562,9 @@ label {
 	border-color: var(--color-recomana-red);
 }
 
+.form-inline .custom-control-label {
+	padding-top: 0;
+}
 
 
 
@@ -1066,6 +1090,7 @@ body > header.mini .megamenu {
 	font-size: 12px;
 	line-height: 1.3;
 	border-bottom: 5px solid var(--color-recomana-red);
+	position: relative;
 }
 .recomana-article .image {
 	width: 180px;
@@ -1417,7 +1442,6 @@ table.valoracion-per-edats td:nth-child(3) {
 .fold-text .fold-wrap {
     max-height: 7em;
     overflow: hidden;
-    box-shadow: inset 0px -15px 15px -15px rgb(255, 255, 255);
 }
 .fold-text.open .fold-wrap {
     animation-name: fold-text-animation;
@@ -1425,24 +1449,25 @@ table.valoracion-per-edats td:nth-child(3) {
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
+.fold-text.open .fold-wrap.open {
+}
 .fold-text .fold-toggle {
+	height: 1.3em;
+	display: block;
+	margin-top: 3px;
+}
+.fold-text .fold-toggle:after {
+    content: "[+]";
+    position: relative;
     font-weight: bold;
     color: var(--color-recomana-red);
     cursor: pointer;
-    position: relative;
     display: block;
     letter-spacing: 0.2em;
+    z-index: 10;
 }
-.fold-text .fold-toggle:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 80%);
-    transform: translateY(-100%);
-}
-.fold-text.open .fold-toggle {
-    display: none;
+.fold-text.open .fold-toggle:after {
+    content: "[-]";
 }
 
 

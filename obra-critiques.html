@@ -17,7 +17,8 @@
     <link href="css/qui-som.css" rel="stylesheet">
     <link href="css/obra.css" rel="stylesheet">
     <link href="css/festivals.css" rel="stylesheet">
-    <link href="css/recomanaccions.css" rel="stylesheet">
+    <link href="css/itineraris.css" rel="stylesheet">
+    <link href="css/trivial.css" rel="stylesheet">
 
 	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
@@ -275,9 +276,9 @@
 						<li data-target="#obra-carousel" data-slide-to="2"></li>
 					</ol>
 					<div class="carousel-inner">
-						<div class="carousel-item active" style="background-image: url(images/placeholder/obra-slide-1.jpg)"></div>
-						<div class="carousel-item" style="background-image: url(images/placeholder/obra-slide-2.jpg)"></div>
-						<div class="carousel-item" style="background-image: url(images/placeholder/obra-slide-3.jpg)"></div>
+						<div class="carousel-item bg-image active" style="background-image: url(images/placeholder/obra-slide-1.jpg)"></div>
+						<div class="carousel-item bg-image" style="background-image: url(images/placeholder/obra-slide-2.jpg)"></div>
+						<div class="carousel-item bg-image" style="background-image: url(images/placeholder/obra-slide-3.jpg)"></div>
 					</div>
 				</div><!--  /.carousel -->
 
@@ -303,7 +304,7 @@
 							<a href="obra-info.html#start">Informació Obra</a> |
 							<a href="obra-critiques.html#start" class="selected">crítiques</a> |
 							<a href="javascript:" data-toggle="modal" data-target="#video-modal">Vídeo</a> |
-							<a href="javascript:">Trivial</a>
+							<a href="trivial.html">Trivial</a>
 						</nav>
 					</div><!--  /.row -->
 				</div><!--  /.obra-header -->
@@ -669,25 +670,24 @@
 
 			</div><!--  /.container -->
 
-
-
-			<!-- Video Modal -->
-			<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-hidden="true">
-				<div class="modal-dialog" role="document">
-					<button type="button" class="close btn-link" data-dismiss="modal" aria-label="Close">
-			        	<span aria-hidden="true">&times;</span>
-			        </button>
-					<div class="modal-content">
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div><!--  /.modal -->
-
 		</section>
 
 	</main>
+
+
+	<!-- Video Modal -->
+	<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<button type="button" class="close btn-link" data-dismiss="modal" aria-label="Close">
+	        	<span aria-hidden="true">&times;</span>
+	        </button>
+			<div class="modal-content">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div><!--  /.modal -->
 
 
 	<footer>
