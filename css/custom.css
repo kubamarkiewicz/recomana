@@ -42,6 +42,9 @@
 .border-black {
 	border-color: var(--color-recomana-black)!important;
 }
+.border-grey {
+	border-color: #b5b5b5;
+}
 
 
 /* categories *********************************************/
