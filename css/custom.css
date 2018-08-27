@@ -124,6 +124,7 @@ body {
 	background-position: center;
 	overflow-x: hidden;
 }
+body.novaveu {background-color: #706d6e;}
 a { 
 	color: var(--color-recomana-red);
 	text-decoration: none;
@@ -149,7 +150,7 @@ small, .small {
 	font-size: 90%;
 }
 .lead {
-	font-size: 130%;
+	font-size: 128%;
 }
 .lead-bigger {
 	font-size: 175%;
@@ -290,12 +291,19 @@ body > header.mini {
 body > main {
 	padding-top: 278px;
 }
+body.novaveu > main {
+	padding-top: 342px;
+}
 
 
 .container {
     max-width: 1200px;
     padding-left: 12px;
     padding-right: 12px;
+}
+.container.dark {
+	background-color: #706d6e;
+	color: #ffffff;
 }
 .row:not(.no-gutters) {
     margin-right: -12px;
@@ -326,6 +334,9 @@ body > main {
 	}
 	body > main {
 		padding-top: 144px;
+	}
+	body.novaveu > main {
+		padding-top: 213px;
 	}
 
 }
@@ -625,17 +636,22 @@ nav li {
 	vertical-align: middle;
 	margin-left: 0.2em;
 }
-.social-icon.www {
-	background-image: url(../images/icon-www.png);
-}
-.social-icon.facebook {
-	background-image: url(../images/icon-fb.png);
-}
-.social-icon.twitter {
-	background-image: url(../images/icon-twitter.png);
-}
+.social-icon.www 			{ background-image: url(../images/icon-www.png); }
+.social-icon.facebook 		{ background-image: url(../images/icon-fb.png); }
+.social-icon.twitter 		{ background-image: url(../images/icon-twitter.png); }
+.social-icon.twitter-black 	{ background-image: url(../images/icon-twitter-black.png); }
+.social-icon.instagram-black { background-image: url(../images/icon-instagram-black.png); }
+.social-icon.email-black 	{ background-image: url(../images/icon-email-black.png); }
 
 
+
+@media (max-width: 991.98px) {
+
+	.social-icon {
+		width: 22px;
+		height: 22px;
+	}
+}
 
 
 .number-box,
@@ -672,7 +688,7 @@ body > header .container {
 
 
 /* logo *********************************************/
-body > header .logo {
+body > header > .container > .logo {
 	position: absolute;
 	top: 18px;
 	margin-left: -12px;
@@ -685,7 +701,7 @@ body > header .logo {
 	transition: all 0.2s;
 	z-index: 10;
 }
-body > header.mini .logo {
+body > header.mini > .container > .logo {
 	height: 88px;
 	top: 0;
 }
@@ -752,18 +768,18 @@ body > header.mini .banner {
 /* mobile */
 @media (max-width: 991.98px) {
 
-	body > header .logo {
+	body > header > .container > .logo {
 		height: 94px;
 		width: 124px;
 		margin-left: -20px;
 	}
 
-	body > header nav.sub-menu {
+	body > header nav.submenu {
 		font-size: 12px;
 		top: 11px;
 		right: 8px;
 	}
-	body > header nav.sub-menu li.social-icon a {
+	body > header nav.submenu li.social-icon a {
 		width: 22px;
 		height: 22px;
 	}
@@ -801,6 +817,7 @@ body > header nav.main-menu {
 	font-size: 20px;
 	text-transform: uppercase;
 	transition: all 0.2s;
+	z-index: 4;
 }
 body > header.mini nav.main-menu {
 	top: 54px;
@@ -859,12 +876,109 @@ body > header .burger .slice + .slice {
 
 
 
+/* novaveu-menu *********************************************/
+
+body > header nav.novaveu-menu {
+	font-family: var(--font-roboto-condensed);
+	font-weight: bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: all 0.2s;
+	position: absolute;
+	top: 268px;
+	z-index: 3;
+	margin-left: -12px;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: var(--color-recomana-red);
+	width: 100%;
+	background-color: var(--color-recomana-red);
+	color: #ffffff;
+	padding-right: 12px;
+}
+body > header nav.novaveu-menu ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+body > header nav.novaveu-menu li {
+}
+body > header nav.novaveu-menu li:not(:last-child) {
+	margin-right: 32px;
+}
+body > header nav.novaveu-menu li:first-child {
+	margin-right: 21px;
+}
+body > header nav.novaveu-menu li:last-child {
+	margin-left: auto;
+	padding-bottom: 3px;
+}
+body > header nav.novaveu-menu a {
+	color: #ffffff;
+	padding-top: 6px;
+	display: inline-block;
+	padding-bottom: 4px;
+	white-space: nowrap;
+}
+body > header nav.novaveu-menu a:hover,
+body > header nav.novaveu-menu a:active,
+body > header nav.novaveu-menu li.current-menu-item a {
+	color: white;
+	text-decoration: underline;
+}
+body > header nav.novaveu-menu a:active {
+	opacity: 0.8;
+}
+body > header nav.novaveu-menu li:nth-child(n+3) a:not(.social-icon):before {
+	content: "|";
+	position: absolute;
+	margin-left: -17px;
+}
+body > header nav.novaveu-menu a.logo {
+	background-color: white;
+	width: 396px;
+	height: 100%;
+	background-image: url(../images/novaveu/menu-logo.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	display: block;
+}
+body > header nav.novaveu-menu a.social-icon {
+	margin-top: 4px;
+}
+body > header.mini nav.novaveu-menu a {
+	color: #ffffff;
+}
+body > header.mini nav.novaveu-menu a:hover,
+body > header.mini nav.novaveu-menu a:active,
+body > header.mini nav.novaveu-menu li.current-menu-item a {
+	color: #231F20;
+}
+body > header.mini nav.novaveu-menu {
+	top: 87px;
+}
+
 
 /* small desktop */
 @media (max-width: 1150px) {
 
 	body > header nav.main-menu {
 		font-size: 16px;
+	}
+
+	body > header nav.novaveu-menu {
+		font-size: 16px;
+	}
+
+	body > header nav.novaveu-menu a.logo {
+		width: 177px;
+		height: 38px;
+	}
+	body > header nav.novaveu-menu ul {
+	}
+	body > header nav.novaveu-menu li {
+	}
+	body > header nav.novaveu-menu li:last-child {
+		margin-left: auto;
 	}
 
 }
@@ -912,6 +1026,25 @@ body > header .burger .slice + .slice {
 
 	body > header .burger {
 	    display: block;
+	}
+
+	
+	body > header nav.novaveu-menu {
+		top: 121px;
+	}
+	body > header nav.novaveu-menu li:not(:last-child) {
+	margin-right: 12px;
+	}
+	body > header nav.novaveu-menu a {
+		font-size: 80%;
+	}
+	body > header nav.novaveu-menu a.logo {
+	    width: 100px;
+	    height: 22px;
+	    background-size: contain;
+	}
+	body > header nav.novaveu-menu li:nth-child(n+3) a:not(.social-icon):before {
+	margin-left: -7px;
 	}
 
 }
@@ -1319,19 +1452,22 @@ body > header.mini .megamenu {
 	position: relative;
 	font-size: 1.2em;
 }
-.square-article .red-bar {
+.square-article .red-bar,
+.square-article .black-bar {
 	background-color: var(--color-recomana-red);
-	color: #ffff;
+	color: #ffffff;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	min-height: 1.95em;
 	line-height: 1.95em;
 }
-.square-article .red-bar h6 {
+.square-article .black-bar {
+	background-color: #272322;
+}
+.square-article .red-bar h6,
+.square-article .black-bar h6 {
 	margin-bottom: 0;
 }
-
-
 .square-article.align-middle main {
 	justify-content: center;
 }

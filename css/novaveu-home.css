@@ -1,0 +1,27 @@
+section#novaveu-home {
+    margin-top: -33px;
+    margin-bottom: -20px;
+}
+section#novaveu-home > .container {
+	padding-top: 32px;
+}
+section#novaveu-home .home-header {
+	margin-bottom: 20px;
+}
+section#novaveu-home .home-header aside {
+	background-color: white;
+	background-image: url(../images/novaveu/logo-novaveu-big.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	min-height: 337px;
+}
+section#novaveu-home .home-header main {
+	background-size: cover;
+	background-position: center center;
+}
+section#novaveu-home .embed-twitter,
+section#novaveu-home .embed-instagram {
+	max-height: 400px;
+	overflow-y: auto;
+}
