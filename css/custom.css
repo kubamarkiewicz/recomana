@@ -544,7 +544,7 @@ label {
 	margin-bottom: 2px;
 }
 .custom-control-label {
-	padding-top: 0.25em;
+	/*padding-top: 0.25em;*/
 }
 .custom-control-label::before {
 	background: transparent;
