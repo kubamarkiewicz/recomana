@@ -36,6 +36,10 @@
 	background-color: var(--color-recomana-red) !important;
 	color: white;
 }
+.bg-black {
+	background-color: #211c1c !important;
+	color: white;
+}
 .border, .border-red, .border-top, .border-bottom, .border-left, .border-right {
 	border-color: var(--color-recomana-red)!important;
 }
@@ -295,6 +299,18 @@ body > main {
 }
 body.novaveu > main {
 	padding-top: 330px;
+}
+
+/* offset anchors */
+a[name=start]:before {
+	content:"";
+	position: absolute;
+	margin-top: -110px;
+}
+body.novaveu a[name=start]:before {
+	content:"";
+	position: absolute;
+	margin-top: -160px;
 }
 
 
@@ -588,13 +604,6 @@ label {
 /* Shared Components	               		   */
 /***********************************************/
 
-
-/* offset "start" anchor */
-a[name=start]:before {
-	content:"";
-	position: absolute;
-	margin-top: -115px;
-}
 
 
 /* navigation */

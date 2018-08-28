@@ -19,10 +19,11 @@
     <link href="css/festivals.css" rel="stylesheet">
     <link href="css/itineraris.css" rel="stylesheet">
     <link href="css/trivial.css" rel="stylesheet">
+    <link href="css/novaveu-home.css" rel="stylesheet">
 
 	<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-<body>
+<body class="novaveu">
 
 	<header>
 		
@@ -54,6 +55,7 @@
                 <div class="slice"></div>
             </div>
 
+			<!-- main menu -->
 			<nav class="main-menu">
 				<ul>
 					<li><a href="index.html" data-megamenu="portada">Portada</a></li>
@@ -62,8 +64,24 @@
 					<li><a href="qui-som.html">Qui som</a></li>
 					<li><a href="festivals.html">FESTIVALS</a></li>
 					<li><a href="javascript:" data-megamenu="et-proposem">et proposem</a></li>
-					<li><a href="novaveu.html">#NOVAVEU</a></li>
+					<li class="current-menu-item"><a href="novaveu.html">#NOVAVEU</a></li>
 				</ul>
+			</nav>
+
+			<!-- novaveu menu -->
+			<nav class="novaveu-menu">
+				<a href="novaveu.html" class="logo" title="#NOVAVEU"></a>
+				<ul>
+					<li class="current-menu-item"><a href="novaveu-critiques.html">Crítiques</a></li>
+					<li><a href="novaveu-articles.html">articles</a></li>
+					<li><a href="novaveu-qui-som.html">Qui som</a></li>
+					<li><a href="javascript:">Contacte</a></li>
+				</ul>
+				<div class="social-icons">
+					<a class="social-icon twitter-black" href="javascript:" target="_blank" title="Twitter"></a>
+					<a class="social-icon instagram-black" href="javascript:" target="_blank" title="Instagram"></a>
+					<a class="social-icon email-black" href="javascript:" target="_blank" title="E-mail"></a>
+				</div>
 			</nav>
 
 			<!-- megamenus -->
@@ -310,9 +328,9 @@
 						<li data-target="#obra-carousel" data-slide-to="2"></li>
 					</ol>
 					<div class="carousel-inner">
-						<div class="carousel-item bg-image active" style="background-image: url(images/placeholder/obra-slide-1.jpg)"></div>
+						<div class="carousel-item bg-image active" style="background-image: url(images/placeholder/obra-slide-5.jpg)"></div>
+						<div class="carousel-item bg-image" style="background-image: url(images/placeholder/obra-slide-4.jpg)"></div>
 						<div class="carousel-item bg-image" style="background-image: url(images/placeholder/obra-slide-2.jpg)"></div>
-						<div class="carousel-item bg-image" style="background-image: url(images/placeholder/obra-slide-3.jpg)"></div>
 					</div>
 				</div><!--  /.carousel -->
 
@@ -325,7 +343,7 @@
 
 			<div class="container">
 
-				<h1 class="display-1 mb-0">Oklahoma</h1>
+				<h1 class="display-1 mb-0">LA TREVA</h1>
 
 				<div class="obra-header row no-gutters">
 					<div class="col-md-5 col-xl-4">
@@ -335,10 +353,9 @@
 					</div>
 					<div class="col-md-7 offset-xl-1">
 						<nav>
-							<a href="obra-info.html#start">Informació Obra</a> |
-							<a href="obra-critiques.html#start" class="selected">crítiques</a> |
-							<a href="javascript:" data-toggle="modal" data-target="#video-modal">Vídeo</a> |
-							<a href="trivial.html">Trivial</a>
+							<a href="novaveu-obra-info.html#start">Informació Obra</a> |
+							<a href="novaveu-obra-critiques.html#start" class="selected">crítica #novaveu</a> |
+							<a href="javascript:" data-toggle="modal" data-target="#video-modal">Vídeo</a>
 						</nav>
 					</div><!--  /.row -->
 				</div><!--  /.obra-header -->
@@ -349,115 +366,150 @@
 					<!-- section S I D E B A R <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
 					
 					<aside class="obra-aside col-md-5 col-xl-4 order-2 order-md-1">
+
+						<img src="images/novaveu/logo-sidebar.png" alt="#NOVAVEU">
+
+						<br>
+						<br>
 							
-						<h2 class="display-2">Què diuen els crítics?</h2>
+						<h2 class="display-2">què diuen els crítics?</h2>
 
 						<div class="critiques">
 							
 							<article>
-								<a href="javascript:" class="image" style="background-image: url(images/placeholder/critic.jpg)"></a>
+								<a href="novaveu-obra-critiques.html#start" class="image" style="background-image: url(images/placeholder/critic-3-small.jpg)"></a>
 								<main>
-									<a href="javascript:" class="box-title">Núria Cañamares</a>
+									<a href="novaveu-obra-critiques.html#start" class="box-title bg-black">Núria Cañamares</a>
 									<div class="text-muted mb-2">23/7/2017</div>
 									<div class="mb-3 pr-3">La solvencia de los intérpretes y una maravillosa puesta en escena compensan las carencias dramatúrgicas.</div>
 									<div class="categories-bar">
 										<span class="number-box float-right">7</span>
-										<span class="category-color bg-color-category-1"></span>
-										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-7"></span>
+										<span class="category-color bg-color-category-11"></span>
 										<span class="category-color bg-color-category-13"></span>
 									</div>
 								</main>
 							</article>
 							
-							<article class="selected">
-								<a href="javascript:" class="image" style="background-image: url(images/placeholder/critic-4.jpg)"></a>
-								<main>
-									<a href="javascript:" class="box-title">Toni Polo</a>
-									<div class="text-muted mb-2">23/7/2017</div>
-									<div class="mb-3 pr-3">La solvencia de los intérpretes y una maravillosa puesta en escena compensan las carencias dramatúrgicas.</div>
-									<div class="categories-bar">
-										<span class="number-box float-right">7</span>
-										<span class="category-color bg-color-category-1"></span>
-										<span class="category-color bg-color-category-14"></span>
-										<span class="category-color bg-color-category-13"></span>
-									</div>
-								</main>
-							</article>
+
 							
 							<article>
-								<a href="javascript:" class="image" style="background-image: url(images/placeholder/critic.jpg)"></a>
+								<a href="novaveu-obra-critiques.html#start" class="image" style="background-image: url(images/placeholder/critic-3-small.jpg)"></a>
 								<main>
-									<a href="javascript:" class="box-title">Núria Cañamares</a>
+									<a href="novaveu-obra-critiques.html#start" class="box-title bg-black">Núria Cañamares</a>
 									<div class="text-muted mb-2">23/7/2017</div>
 									<div class="mb-3 pr-3">La solvencia de los intérpretes y una maravillosa puesta en escena compensan las carencias dramatúrgicas.</div>
 									<div class="categories-bar">
 										<span class="number-box float-right">7</span>
-										<span class="category-color bg-color-category-1"></span>
-										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-7"></span>
+										<span class="category-color bg-color-category-11"></span>
 										<span class="category-color bg-color-category-13"></span>
 									</div>
 								</main>
 							</article>
 							
+
+							
 							<article>
-								<a href="javascript:" class="image" style="background-image: url(images/placeholder/critic.jpg)"></a>
+								<a href="novaveu-obra-critiques.html#start" class="image" style="background-image: url(images/placeholder/critic-3-small.jpg)"></a>
 								<main>
-									<a href="javascript:" class="box-title">Núria Cañamares</a>
+									<a href="novaveu-obra-critiques.html#start" class="box-title bg-black">Núria Cañamares</a>
 									<div class="text-muted mb-2">23/7/2017</div>
 									<div class="mb-3 pr-3">La solvencia de los intérpretes y una maravillosa puesta en escena compensan las carencias dramatúrgicas.</div>
 									<div class="categories-bar">
 										<span class="number-box float-right">7</span>
-										<span class="category-color bg-color-category-1"></span>
-										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-7"></span>
+										<span class="category-color bg-color-category-11"></span>
 										<span class="category-color bg-color-category-13"></span>
 									</div>
 								</main>
 							</article>
 							
+
+							
 							<article>
-								<a href="javascript:" class="image" style="background-image: url(images/placeholder/critic.jpg)"></a>
+								<a href="novaveu-obra-critiques.html#start" class="image" style="background-image: url(images/placeholder/critic-3-small.jpg)"></a>
 								<main>
-									<a href="javascript:" class="box-title">Núria Cañamares</a>
+									<a href="novaveu-obra-critiques.html#start" class="box-title bg-black">Núria Cañamares</a>
 									<div class="text-muted mb-2">23/7/2017</div>
 									<div class="mb-3 pr-3">La solvencia de los intérpretes y una maravillosa puesta en escena compensan las carencias dramatúrgicas.</div>
 									<div class="categories-bar">
 										<span class="number-box float-right">7</span>
-										<span class="category-color bg-color-category-1"></span>
-										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-7"></span>
+										<span class="category-color bg-color-category-11"></span>
 										<span class="category-color bg-color-category-13"></span>
 									</div>
 								</main>
 							</article>
 							
+
+							
 							<article>
-								<a href="javascript:" class="image" style="background-image: url(images/placeholder/critic.jpg)"></a>
+								<a href="novaveu-obra-critiques.html#start" class="image" style="background-image: url(images/placeholder/critic-3-small.jpg)"></a>
 								<main>
-									<a href="javascript:" class="box-title">Núria Cañamares</a>
+									<a href="novaveu-obra-critiques.html#start" class="box-title bg-black">Núria Cañamares</a>
 									<div class="text-muted mb-2">23/7/2017</div>
 									<div class="mb-3 pr-3">La solvencia de los intérpretes y una maravillosa puesta en escena compensan las carencias dramatúrgicas.</div>
 									<div class="categories-bar">
 										<span class="number-box float-right">7</span>
-										<span class="category-color bg-color-category-1"></span>
-										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-7"></span>
+										<span class="category-color bg-color-category-11"></span>
 										<span class="category-color bg-color-category-13"></span>
 									</div>
 								</main>
 							</article>
 							
+
+							
 							<article>
-								<a href="javascript:" class="image" style="background-image: url(images/placeholder/critic.jpg)"></a>
+								<a href="novaveu-obra-critiques.html#start" class="image" style="background-image: url(images/placeholder/critic-3-small.jpg)"></a>
 								<main>
-									<a href="javascript:" class="box-title">Núria Cañamares</a>
+									<a href="novaveu-obra-critiques.html#start" class="box-title bg-black">Núria Cañamares</a>
 									<div class="text-muted mb-2">23/7/2017</div>
 									<div class="mb-3 pr-3">La solvencia de los intérpretes y una maravillosa puesta en escena compensan las carencias dramatúrgicas.</div>
 									<div class="categories-bar">
 										<span class="number-box float-right">7</span>
-										<span class="category-color bg-color-category-1"></span>
-										<span class="category-color bg-color-category-14"></span>
+										<span class="category-color bg-color-category-7"></span>
+										<span class="category-color bg-color-category-11"></span>
 										<span class="category-color bg-color-category-13"></span>
 									</div>
 								</main>
 							</article>
+							
+
+							
+							<article>
+								<a href="novaveu-obra-critiques.html#start" class="image" style="background-image: url(images/placeholder/critic-3-small.jpg)"></a>
+								<main>
+									<a href="novaveu-obra-critiques.html#start" class="box-title bg-black">Núria Cañamares</a>
+									<div class="text-muted mb-2">23/7/2017</div>
+									<div class="mb-3 pr-3">La solvencia de los intérpretes y una maravillosa puesta en escena compensan las carencias dramatúrgicas.</div>
+									<div class="categories-bar">
+										<span class="number-box float-right">7</span>
+										<span class="category-color bg-color-category-7"></span>
+										<span class="category-color bg-color-category-11"></span>
+										<span class="category-color bg-color-category-13"></span>
+									</div>
+								</main>
+							</article>
+							
+
+							
+							<article>
+								<a href="novaveu-obra-critiques.html#start" class="image" style="background-image: url(images/placeholder/critic-3-small.jpg)"></a>
+								<main>
+									<a href="novaveu-obra-critiques.html#start" class="box-title bg-black">Núria Cañamares</a>
+									<div class="text-muted mb-2">23/7/2017</div>
+									<div class="mb-3 pr-3">La solvencia de los intérpretes y una maravillosa puesta en escena compensan las carencias dramatúrgicas.</div>
+									<div class="categories-bar">
+										<span class="number-box float-right">7</span>
+										<span class="category-color bg-color-category-7"></span>
+										<span class="category-color bg-color-category-11"></span>
+										<span class="category-color bg-color-category-13"></span>
+									</div>
+								</main>
+							</article>
+							
 
 						</div><!--  /.critiques -->
 
@@ -465,7 +517,7 @@
 
 
 						<div class="banner mb-4">
-							<a href="novaveu-obra-critiques.html#start"><img src="images/mas-criticas-novaveu.png" alt=""></a>
+							<a href="obra-critiques.html#start"><img src="images/mas-criticas-recomana.png" alt=""></a>
 						</div>
 
 
@@ -572,6 +624,12 @@
 						</div><!--  /.valoracion  -->
 
 						<hr>
+						<br>
+
+
+						<div class="banner mb-4">
+							<a href="javascript:"><img src="images/placeholder/banner-aside-3.png" alt=""></a>
+						</div>
 
 					</aside>
 
@@ -588,83 +646,29 @@
 	
 							<aside class="col-lg-3 col-sm-4">
 
-								<a href="qui-som.html#critic" class="critic-image" style="background-image: url(images/placeholder/critic-4.jpg"></a>
-
-								<div class="label">Categories</div>
-								<div class="category-label bg-color-category-5">Cervesa negra i ben amarga</div>
-								<div class="category-label bg-color-category-6">La meva primera colònia</div>
-								<div class="category-label bg-color-category-7">Pròxima estació, esperança</div>
-
-								<div class="label mt-4">Valoració</div>
-								<div class="number-box-big">8</div>
-
-
-								<div class="label mt-4">Valoració per edats</div>
-								<table class="valoracion-per-edats">
-									<tr>
-										<th>+ 66</th>
-										<td><span class="line" style="width: 100%"></span></td>
-										<td>10</td>
-									</tr>
-									<tr>
-										<th>51 - 66</th>
-										<td><span class="line" style="width: 50%"></span></td>
-										<td>5</td>
-									</tr>
-									<tr>
-										<th>26 - 35</th>
-										<td><span class="line" style="width: 30%"></span></td>
-										<td>3</td>
-									</tr>
-									<tr>
-										<th>51 - 66</th>
-										<td><span class="line" style="width: 50%"></span></td>
-										<td>5</td>
-									</tr>
-									<tr>
-										<th>26 - 35</th>
-										<td><span class="line" style="width: 30%"></span></td>
-										<td>3</td>
-									</tr>
-									<tr>
-										<th>51 - 66</th>
-										<td><span class="line" style="width: 50%"></span></td>
-										<td>5</td>
-									</tr>
-									<tr>
-										<th>26 - 35</th>
-										<td><span class="line" style="width: 30%"></span></td>
-										<td>3</td>
-									</tr>
-									<tr>
-										<th>4 - 6</th>
-										<td><span class="line" style="width: 0%"></span></td>
-										<td>0</td>
-									</tr>
-									<tr>
-										<th>0 - 3</th>
-									</tr>
-								</table>
+								<a href="javascript:" class="critic-image" style="background-image: url(images/placeholder/critic-2.jpg"></a>
 
 							</aside>
 
 							<main class="col-sm-8 offset-lg-1">
 								<div class="text-right font-roboto-condensed">20/11/2017</div>
-								<h3 class="critica-title">La caiguda d'Occident</h3>
-								<h5 class="font-weight-light"><a href="javascript:">per Toni Polo</a></h5>
-
-								<div class="critica-text">
-									
-									<p>La cosa comença a la Islàndia que va petar el 2008 (i que després va donar una lliçó al món no perdonant els bancs). Però la cosa passa a Nova York. Al símbol de la societat occidental, la nostra, la ‘bona’. I la conclusió és que la cosa, a la capital del planeta igual que en un país desconegut (diuen que allà hi ha molts que no saben ni on és Espanya...), ha petat. El noi que fuig de la crisi islandesa en busca de la seva mare, flipa als battrris i al moll de l’os de la ciutat dels gratacels, movent-se lluny del cel, pràcticament sota terra, en un tren cap a Manhattan, en un carrer fred de Harlem, en una gossera del Bronx a la nit, als baixos de Wall Street, a la catedral de Sant Patrici o a la sala d’espera d’un hospital de Chinatown. Tot molt sòrdid, molt dur, molt cru. Molt actual.</p>
-									<p>Com si anés superant pantalles, el noi anirà apropant-se a la seva mare fins a trobar-la i descobrir (no cal dir com acaba l’odissea urbana del protagonista: tot tornarà a començar, potser?) que a tot arreu tot trontolla. L’ambient escenogràfic, amb canvis mínims que canvien molt, ens atrapa, però la història no. El rerefons s’endevina fascinant, però  no hi entrem, la narració va per altres camins.</p>
-									<p>Em quedo amb certes sàvies però tòpiques dissertacions sobre la vida que sent el nen (un adolescent de 15 anys), la majoria en forma de consells dels personatges: un viatger inventor (aprofitat?); un metge (salvador? ‘pepito grillo’, potser?); una venedora ambulant (estafadora?); el miserable guardià d’una gossera, amic de la mare del nen; la parella de la mare; el broker caigut del cel... I la mare, per fi, que tira les cartes. Tots aquests personatges ens els creiem (tot i què jo reconec que només en tinc referències de les pel·lícules), estan ben dibuixats i ben interpretats. Estem davant d’una fugida que topa amb la dura realitat i que respira misteri: quina mena de maqueta de quin invent meteorològic hi ha a la caixa que el viatger ven al metge i aquest regla al noi? Quin final espera a la mare, en forma de cartes? Cal que ens tirin les cartes, si tothom sap com serà el futur?</p>
-	
-								</div>
-
+								<h3 class="critica-title">Esclat emocional</h3>
+								<h5 class="font-weight-light"><a href="javascript:">per Lucia Gusmaroli</a></h5>
 							</main>
 
 						</div><!--  /.critica -->
 
+						<div class="pr-2">
+									
+							<p>L’escenografia representa l’interior d’un pis de Brooklyn. Sarah i James (Clara Segura i David Selvas) tornen a casa després d’un llarg viatge. Ella és fotoperiodista de guerra: l’esclat d’una bomba durant una missió a l’Iraq l’ha ferit greument a una cama i li ha deixat unes cicatrius a la cara. Ell, que l’acompanya com a periodista independent, les marques de la guerra les duu a la psique, ja que s’està recuperant d’un trastorn per estrès posttraumàtic. La parella es veu obligada a transcórrer un temps de repòs – una treva – lluny dels horrors de la guerra. Poc després d’haver tornat, els dos reben una visita de Richard (Ramon Madaula), amic i editor, acompanyat de Mandy (Mima Riera), la seva nova xicota, ingènua i molt més jove que ell. Els diàlegs entre els quatre i la comparació amb una parella tan diferent fan que Sara i James qüestionin tot el que havien donat per descomptat fins a aquell moment, generant dubtes sobre els objectius i les prioritats dels dos, com a individus i com a parella.</p>
+							<p>Com altres espectacles proposats a Temporada Alta enguany, tal i com El color de la llum i Un tret al cap, aquesta obra es desenvolupa al voltant de l’ofici del periodista. La treva, però, va més enllà: no només presenta a l’espectador unes reflexions sobre l’exercici de la professió, sinó que també engega un debat deixant moltes preguntes obertes. La subtil separació entre vocació i necessitat, la funció social del fotoperiodisme, l’efecte “dessensibilitzant i catàrtic” provocat per la brutalitat, el difícil equilibri familiar de qui consagra la vida a una feina tant perillosa: enmig de l’atmosfera majoritàriament còmica que caracteritza la primera part de la obra, aquestes reflexions colpegen el públic de sobte i, una vegada acabat l’espectacle, l’acompanyen a casa.</p>
+							<p>El que més s’aprecia d’aquesta obra és l’honestedat: cauen les màscares d’herois, la presumpta superioritat moral de Sara per comparació al personatge de Mandy perd significat al llarg de l’espectacle i es desvela el caire més humà dels personatges en una varietat de matisos. No sorprèn que Donald Margulies, dramaturg estatunidenc, hagi triomfat a Broadway amb aquesta peça, titulada Time stands still en versió original. Un text ja interessant per la temàtica, en aquest cas complementat per la traducció exceŀlent de Cristina Genebat i pel treball magnífic de Julio Manrique, director d’aquesta producció. Destacable la complicitat entre els actors, que aconsegueixen actuar amb harmonia fins en els moments més dramatics i confusos, quan les veus es sobreposen. Una interpretació excepcional i convincent, en la qual brilla Clara Segura commovent el públic.</p>
+							<p>PD: Una raó més per anar a veure aquest espectacle? Hi ha banda sonora! La podeu escoltar <a href="javascript:">aquí</a>.</p>
+
+						</div>
+
+						<br>
+						<br>
 
 
 						<h2 class="display-2">Deixa un comentari</h2>
