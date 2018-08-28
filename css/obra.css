@@ -47,6 +47,10 @@ section#obra .critiques>article.selected {
     background-color: #f8f8f8;
 }
 
+section#obra .critiques>article>a {
+    display: block;
+}
+
 section#obra .critiques>article .image {
     display: block;
     float: left;
