@@ -1,0 +1,14 @@
+1. Colores de categorias
+
+Definiciones de colores de categorias (lineas 58 y 90 en archivo css/custom.css) hay que generar de manera dinamica. El numero al final de la clase debe corresponder al ID de categoria.
+
+
+2. Popups en Trival
+
+Hay 4 funciones en JavaScript para abrir popups y uno para cerrarlas:
+
+function openLoginPopup(articleId)
+function openQuestionsPopup(articleId)
+function openThankyouPopup(articleId)
+function openRepetitionPopup(articleId)
+function closeAllPopups() 
