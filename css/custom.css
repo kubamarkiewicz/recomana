@@ -124,7 +124,9 @@ body {
 	background-position: center;
 	overflow-x: hidden;
 }
-body.novaveu {background-color: #706d6e;}
+body.novaveu {
+	background-color: #706d6e;
+}
 a { 
 	color: var(--color-recomana-red);
 	text-decoration: none;
@@ -885,63 +887,55 @@ body > header nav.novaveu-menu {
 	text-transform: uppercase;
 	transition: all 0.2s;
 	position: absolute;
-	top: 268px;
+	top: 262px;
 	z-index: 3;
 	margin-left: -12px;
-	border-width: 1px 0;
-	border-style: solid;
-	border-color: var(--color-recomana-red);
 	width: 100%;
 	background-color: var(--color-recomana-red);
 	color: #ffffff;
-	padding-right: 12px;
-}
-body > header nav.novaveu-menu ul {
-	display: flex;
-	flex-wrap: wrap;
-}
-body > header nav.novaveu-menu li {
-}
-body > header nav.novaveu-menu li:not(:last-child) {
-	margin-right: 32px;
-}
-body > header nav.novaveu-menu li:first-child {
-	margin-right: 21px;
-}
-body > header nav.novaveu-menu li:last-child {
-	margin-left: auto;
-	padding-bottom: 3px;
-}
-body > header nav.novaveu-menu a {
-	color: #ffffff;
-	padding-top: 6px;
-	display: inline-block;
-	padding-bottom: 4px;
-	white-space: nowrap;
-}
-body > header nav.novaveu-menu a:hover,
-body > header nav.novaveu-menu a:active,
-body > header nav.novaveu-menu li.current-menu-item a {
-	color: white;
-	text-decoration: underline;
-}
-body > header nav.novaveu-menu a:active {
-	opacity: 0.8;
-}
-body > header nav.novaveu-menu li:nth-child(n+3) a:not(.social-icon):before {
-	content: "|";
-	position: absolute;
-	margin-left: -17px;
+	padding-top: 1px;
+	border-top: 6px solid white;
+	border-bottom: 1px solid var(--color-recomana-red);
 }
 body > header nav.novaveu-menu a.logo {
 	background-color: white;
 	width: 396px;
-	height: 100%;
+	height: 38px;
 	background-image: url(../images/novaveu/menu-logo.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 	display: block;
+	background-size: contain;
 }
+body > header nav.novaveu-menu ul {
+	position: absolute;
+	left: 385px;
+	top: 2px;
+}
+body > header nav.novaveu-menu li {
+	display: inline;
+	margin-left: 32px;
+}
+body > header nav.novaveu-menu li:not(:first-child):before {
+	content: "|";
+	position: absolute;
+	margin-left: -20px;
+	top: 3px;
+}
+body > header nav.novaveu-menu li a {
+	color: #ffffff;
+	padding-top: 4px;
+	display: inline-block;
+	padding-bottom: 4px;
+	white-space: nowrap;
+}
+body > header nav.novaveu-menu li a:hover,
+body > header nav.novaveu-menu li a:active,
+body > header nav.novaveu-menu li.current-menu-item a {
+	color: white;
+	text-decoration: underline;
+}
+body > header nav.novaveu-menu .social-icons {position: absolute;top: 1px;right: 12px;}
 body > header nav.novaveu-menu a.social-icon {
 	margin-top: 4px;
 }
@@ -954,7 +948,8 @@ body > header.mini nav.novaveu-menu li.current-menu-item a {
 	color: #231F20;
 }
 body > header.mini nav.novaveu-menu {
-	top: 87px;
+	top: 88px;
+	border-top: 6px solid white;
 }
 
 
@@ -970,15 +965,10 @@ body > header.mini nav.novaveu-menu {
 	}
 
 	body > header nav.novaveu-menu a.logo {
-		width: 177px;
-		height: 38px;
 	}
+
 	body > header nav.novaveu-menu ul {
-	}
-	body > header nav.novaveu-menu li {
-	}
-	body > header nav.novaveu-menu li:last-child {
-		margin-left: auto;
+		top: 5px;
 	}
 
 }
@@ -1032,20 +1022,54 @@ body > header.mini nav.novaveu-menu {
 	body > header nav.novaveu-menu {
 		top: 121px;
 	}
-	body > header nav.novaveu-menu li:not(:last-child) {
-	margin-right: 12px;
+
+	body > header nav.novaveu-menu a.logo {
+		height: 32px;
+		width: 137px;
 	}
-	body > header nav.novaveu-menu a {
-		font-size: 80%;
+	body > header nav.novaveu-menu ul {
+		left: 122px;
+		top: 2px;
+	}
+
+}
+
+
+/* small desktop */
+@media (max-width: 768px) {
+
+	body > header nav.novaveu-menu {
+		padding-top: 0;
+		font-size: 13px;
 	}
 	body > header nav.novaveu-menu a.logo {
-	    width: 100px;
-	    height: 22px;
-	    background-size: contain;
+		display: block;
+		width: 100%;
+		background-position-x: left;
 	}
-	body > header nav.novaveu-menu li:nth-child(n+3) a:not(.social-icon):before {
-	margin-left: -7px;
+	body > header nav.novaveu-menu ul {
+		background-color: var(--color-recomana-red);
+		width: 100%;
+		left: 0;
+		top: 33px;
 	}
+	body > header nav.novaveu-menu li:first-child {
+		margin-left: 12px;
+	}
+	body > header nav.novaveu-menu .social-icons {
+		position: absolute;
+		right: 0;
+		background-color: var(--color-recomana-red);
+		padding-right: 12px;
+		padding-left: 41px;
+		height: 30px;
+		background-image: url(../images/novaveu/menu-mobile-bg.png);
+		background-repeat: no-repeat;
+	}
+	body > header nav.novaveu-menu li a {
+		padding-bottom: 2px;
+	}
+
 
 }
 
