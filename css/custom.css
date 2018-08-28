@@ -294,7 +294,7 @@ body > main {
 	padding-top: 278px;
 }
 body.novaveu > main {
-	padding-top: 342px;
+	padding-top: 330px;
 }
 
 
@@ -945,7 +945,7 @@ body > header.mini nav.novaveu-menu a {
 body > header.mini nav.novaveu-menu a:hover,
 body > header.mini nav.novaveu-menu a:active,
 body > header.mini nav.novaveu-menu li.current-menu-item a {
-	color: #231F20;
+	color: white;
 }
 body > header.mini nav.novaveu-menu {
 	top: 88px;

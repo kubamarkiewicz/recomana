@@ -58,7 +58,7 @@ section#qui-som article main .arrow {
 }
 
 
-section#qui-som #collapse-prescriptors {
+section#qui-som .collapse.fixed-height {
 	max-height: 615px;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -69,7 +69,7 @@ section#qui-som #collapse-prescriptors {
 /* mobile */
 @media (max-width: 1199.98px) {
 
-	section#qui-som #collapse-prescriptors {
+	section#qui-som .collapse.fixed-height {
 		max-height: none;
 		overflow-y: hidden;
 	}
