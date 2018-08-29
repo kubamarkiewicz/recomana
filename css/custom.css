@@ -476,6 +476,42 @@ body.novaveu a[name=start]:before {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23858585' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 	background-position: center center;
 }
+
+
+/* slick slider */
+.slick-slider {
+	/* margin-right: -4px; */
+}
+.slick-slide {
+	margin-right: 6px;
+}
+.slick-arrow {
+	width: 2em;
+	height: 2em;
+	background-color: white;
+	top: auto;
+	bottom: 0;
+	border: none;
+	text-indent: -200px;
+	position: absolute;
+	color: var(--color-recomana-red);
+	background-position: center center;
+	border: 0.5em solid white;
+	cursor: pointer;
+	z-index: 2;
+	overflow: hidden;
+}
+.slick-prev {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23be1e2d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	left: 0;
+}
+.slick-next {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23be1e2d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	right: 0;
+}
+.slick-arrow:active {
+	opacity: 0.8;
+}
 	
 
 /***********************************************/
@@ -1441,12 +1477,14 @@ body > header.mini .megamenu {
 	background-size: cover;
 	background-position: center center;
 	padding-bottom: 100%;
+	/* height: 100%; */
 	overflow: hidden;
 	position: relative;
 	font-family: var(--font-roboto-condensed);
 	font-size: 12px;
 	line-height: 1.2;
 	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+	height: 0;
 }
 .square-article main {
 	position: absolute;
