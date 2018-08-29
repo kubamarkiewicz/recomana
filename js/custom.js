@@ -15,6 +15,19 @@ $(function() {
     onScroll();
 
 
+    // close filters on mobile
+    function onWindowResize()
+    {
+        if ($(window).innerWidth() < 752) {
+            $('.collapse-control:not(.collapsed)').click();
+        }
+    }
+    $(window).resize(onWindowResize);
+    onWindowResize();
+
+
+
+
     // toggle burger menu
     $('body > header .burger').click(function(){
     	$('body > header nav.main-menu').toggleClass('open');
