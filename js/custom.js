@@ -70,6 +70,24 @@ $(function() {
         regional: $.datepicker.regional["ca"],
         dateFormat: 'yy-mm-dd'
     });
+
+
+    // fold filter checkboxes
+    $('.collapse-control.checkboxes').click(function(){
+        $(this).toggleClass('collapsed');
+        var targetSelector = $(this).data('target');
+        
+        if ($(this).hasClass('collapsed')) { // hide checkboxes what are NOT checked
+            $(targetSelector).each(function(index, el){
+                if (!$(el).find('input').prop('checked')) {
+                    $(el).addClass('collapse').removeClass('show');
+                }
+            });
+        }
+        else { // show checboxes
+            $(targetSelector).addClass('collapse').addClass('show');
+        }
+    });
     
 
 });
